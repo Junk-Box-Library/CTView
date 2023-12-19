@@ -1,4 +1,4 @@
-// CT_MFCLib.h : CT_MFCLib アプリケーションのメイン ヘッダー ファイル
+﻿// CT_MFCLib.h : CT_MFCLib アプリケーションのメイン ヘッダー ファイル
 //
 #pragma once
 

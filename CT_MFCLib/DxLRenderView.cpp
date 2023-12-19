@@ -1,4 +1,4 @@
-// DxLRenderView.cpp : インプリメンテーション ファイル
+﻿// DxLRenderView.cpp : インプリメンテーション ファイル
 //
 
 #include "stdafx.h"

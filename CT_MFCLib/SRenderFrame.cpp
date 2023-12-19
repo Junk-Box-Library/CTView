@@ -1,4 +1,4 @@
-// SRenderFrame.cpp : インプリメンテーション ファイル
+﻿// SRenderFrame.cpp : インプリメンテーション ファイル
 //
 
 #include "stdafx.h"

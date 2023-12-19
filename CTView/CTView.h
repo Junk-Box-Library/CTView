@@ -1,4 +1,4 @@
-// CTView.h : CTVIEW アプリケーションのメイン ヘッダー ファイル
+﻿// CTView.h : CTVIEW アプリケーションのメイン ヘッダー ファイル
 //
 
 #if !defined(AFX_CTVIEW_H__8E4C3ED0_0F06_412A_A67A_1A6C5F3E7577__INCLUDED_)

@@ -1,4 +1,4 @@
-// RwRGNDoc.cpp : インプリメンテーション ファイル
+﻿// RwRGNDoc.cpp : インプリメンテーション ファイル
 //
 
 #include "stdafx.h"

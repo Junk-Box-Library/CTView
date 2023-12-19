@@ -1,4 +1,4 @@
-// MGRSimpleFrame.cpp : 実装ファイル
+﻿// MGRSimpleFrame.cpp : 実装ファイル
 //
 
 #include "stdafx.h"

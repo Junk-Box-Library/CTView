@@ -1,4 +1,4 @@
-// InfoGraphDLG.cpp : 実装ファイル
+﻿// InfoGraphDLG.cpp : 実装ファイル
 //
 
 #include "stdafx.h"

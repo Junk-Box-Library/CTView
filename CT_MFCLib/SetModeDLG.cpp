@@ -1,4 +1,4 @@
-// SetModeDLG.cpp : インプリメンテーション ファイル
+﻿// SetModeDLG.cpp : インプリメンテーション ファイル
 //
 
 #include "stdafx.h"

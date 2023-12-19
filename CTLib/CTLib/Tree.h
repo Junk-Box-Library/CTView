@@ -1,13 +1,10 @@
-
+﻿
 #ifndef  _TREE_H
 #define  _TREE_H
 
 
 /**
-	再帰的領域探索ヘッダ
-
-
-
+    再帰的領域探索ヘッダ
   */
 
 #include "Branch.h"
@@ -15,32 +12,29 @@
 #include "StatusCheck.h"
 #include "exFilter.h"
 
-
-
-#define  STOP_SEARCH_DEPTH_OF_BRANCH  15	// 探索を行う，枝の深さの最大値
+#define  STOP_SEARCH_DEPTH_OF_BRANCH  15    // 探索を行う，枝の深さの最大値
 
 #define  BRANCH_OVLP_CHECK    0.6f
 #define  BRANCH_OVLP_UNIT     0.01f
 
 
-extern  int		Tree_No;
-extern  int		Region_No;
-extern  int		Branch_No;
-extern  bool	Inter_Path;
-extern  bool	Sphere_Start;
+extern  int     Tree_No;
+extern  int     Region_No;
+extern  int     Branch_No;
+extern  bool    Inter_Path;
+extern  bool    Sphere_Start;
 
-extern  int		SavedRegionNum;
-extern  bool	isCanceled;
+extern  int        SavedRegionNum;
+extern  bool    isCanceled;
 
-extern  MSGraph<sWord>*		GLMPgd;
-extern  MSGraph<sWord>*		GLMPgx;
+extern  MSGraph<sWord>*        GLMPgd;
+extern  MSGraph<sWord>*        GLMPgx;
 
 extern RgnStatRingBuffer*  pSearchRing;
 extern RgnStatRingBuffer*  pInterpRing;
 
 //
 MSGraph<sWord>* RecursiveRegionSearch(MSGraph<sWord> gd, MSGraph<sWord> gx, int sm, FILE* fp=NULL);
-
 
 MSGraph<sWord>  look_forward(MSGraph<sWord> gd, RgnStat ns, double rs, int vm, int nz=1);  
 MSGraph<sWord>  look_forward(MSGraph<sWord> gd, RgnStat ns, int vm);

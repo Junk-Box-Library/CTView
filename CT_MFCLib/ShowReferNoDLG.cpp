@@ -1,4 +1,4 @@
-// ShowReferNoDLG.cpp : インプリメンテーション ファイル
+﻿// ShowReferNoDLG.cpp : インプリメンテーション ファイル
 //
 
 #include "stdafx.h"

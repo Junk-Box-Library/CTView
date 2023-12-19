@@ -1,4 +1,4 @@
-
+﻿
 #include  "exFilter.h"
 
 
@@ -6,16 +6,14 @@ int  FilterMode = 0;
 
 
 /**
-	とりあえず書いた．
-
+    とりあえず書いた．
 */
 MSGraph<sWord>  xfilter(RgnStat ns, MSGraph<sWord> xp)
 {
-	MSGraph<sWord> vp;
-	copy_MSGraph(xp, vp);
-	return vp;
+    MSGraph<sWord> vp;
+    copy_MSGraph(xp, vp);
+    return vp;
 }
-
 
 
 /*
@@ -30,23 +28,23 @@ MSGraph<sWord>  fx_mask(MSGraph<sWord> xp, FMask mask)
     MSGraph<sWord> vp, na;
 
     if ((xp.zs>1&&mask.mode==2)||(xp.zs<=1&&mask.mode>2)) {
-		DEBUG_MODE print_message("FX_MASK: Error: mismach mask dimension ");
-		DEBUG_MODE print_message("%d %d",xp.zs,mask.mode);
-		vp.xs = vp.ys = vp.zs = 0;
-		vp.gp = NULL;
-		return vp;
+        DEBUG_MODE print_message("FX_MASK: Error: mismach mask dimension ");
+        DEBUG_MODE print_message("%d %d",xp.zs,mask.mode);
+        vp.xs = vp.ys = vp.zs = 0;
+        vp.gp = NULL;
+        return vp;
     }
 
     nf = mask.nfact;
     ms = mask.msize;
     if (mask.mode==2) {
-		sw = 0;
-		pm = ms*ms;
-		mz = 0;
+        sw = 0;
+        pm = ms*ms;
+        mz = 0;
     }
     else {
-		sw = 1;
-		pm = ms*ms*ms;
+        sw = 1;
+        pm = ms*ms*ms;
         mz = Min(ms, xp.zs-2);
     }
 
@@ -67,35 +65,34 @@ MSGraph<sWord>  fx_mask(MSGraph<sWord> xp, FMask mask)
     for(y=xc; y<xp.ys-xc; y++) 
     for(x=xc; x<xp.xs-xc; x++) {
         cx  = z*ps + y*xs + x;
-   		nx  = na.gp[cx-ps*sw];
+           nx  = na.gp[cx-ps*sw];
         nx2 = nx*nx;
-		anx = Xabs(nx);
-		dd  = 0.0;
-		dz  = 0.0;
+        anx = Xabs(nx);
+        dd  = 0.0;
+        dz  = 0.0;
         for (zz=-zc; zz<=zc; zz++)
         for (yy=-xc; yy<=xc; yy++)
         for (xx=-xc; xx<=xc; xx++) {
             cp = kc + xx + yy*ms + zz*ms*ms;
-	    	cw = cx + xx + yy*xs + zz*ps;
+            cw = cx + xx + yy*xs + zz*ps;
 
-	    	if (cw==cx) df = 1.0;
-	    	else df = exp(-((float)(na.gp[cw-ps*sw]-nx)+1.)/(nx2+1.));
-	    	ux = xp.gp[cw];
-	    	dg = mask.imask[cp];
-	    	dd = dd + ux*dg*df;
-	    	dz = dz + df*dg;
+            if (cw==cx) df = 1.0;
+            else df = exp(-((float)(na.gp[cw-ps*sw]-nx)+1.)/(nx2+1.));
+            ux = xp.gp[cw];
+            dg = mask.imask[cp];
+            dd = dd + ux*dg*df;
+            dz = dz + df*dg;
         }
-		
-		if (dz!=0.0) vp.gp[cx-z*ps] = (sWord)(dd/dz);
-		else         vp.gp[cx-z*ps] = (sWord)(dd);
-//		else         vp.gp[cx-z*ps] = (sWord)(dd.nf);
+        
+        if (dz!=0.0) vp.gp[cx-z*ps] = (sWord)(dd/dz);
+        else         vp.gp[cx-z*ps] = (sWord)(dd);
+//        else         vp.gp[cx-z*ps] = (sWord)(dd.nf);
     }
 
     free(na.gp);
 
     return vp;
 }
-
 
 
 void   fi_mask(MSGraph<sWord> xp, FMask mask)
@@ -124,24 +121,24 @@ void   fi_mask(MSGraph<sWord> xp, FMask mask)
     for(y=xc; y<xp.ys-xc; y++) 
     for(x=xc; x<xp.xs-xc; x++) {
         cx  = y*xs + x;
-   		nx  = na.gp[cx];
+        nx  = na.gp[cx];
         nx2 = nx*nx;
-		anx = Xabs(nx);
-		dd  = 0.0;
-		dz  = 0.0;
+        anx = Xabs(nx);
+        dd  = 0.0;
+        dz  = 0.0;
         for (yy=-xc; yy<=xc; yy++)
         for (xx=-xc; xx<=xc; xx++) {
             cp = kc + xx + yy*ms;
-	    	cw = cx + xx + yy*xs;
+            cw = cx + xx + yy*xs;
 
-	    	if      (cw==cx) df = 1.0;
-	    	else df = exp(-((float)(na.gp[cw]-nx)*(na.gp[cw]-nx)+1.)/(nx2+1.));
+            if      (cw==cx) df = 1.0;
+            else df = exp(-((float)(na.gp[cw]-nx)*(na.gp[cw]-nx)+1.)/(nx2+1.));
 
-	    	ux = xp.gp[cw];
-	    	dg = mask.imask[cp];
-	    	dd = dd + ux*dg*df;
+            ux = xp.gp[cw];
+            dg = mask.imask[cp];
+            dd = dd + ux*dg*df;
         }
-		vp.gp[cx] = (sWord)(dd/nf);
+        vp.gp[cx] = (sWord)(dd/nf);
     }
 
     for (i=0; i<ps; i++) xp.gp[i] = vp.gp[i];
@@ -150,7 +147,6 @@ void   fi_mask(MSGraph<sWord> xp, FMask mask)
 
     return;
 }
-
 
 
 MSGraph<sWord>  curvef(MSGraph<sWord> xp, int m) 
@@ -201,4 +197,3 @@ MSGraph<sWord>  xfilter(RgnStat ns, MSGraph<sWord> xp)
 }
 */
 
- 

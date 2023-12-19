@@ -1,4 +1,4 @@
-// MainFrm.cpp : CMainFrame クラスの動作の定義を行います。
+﻿// MainFrm.cpp : CMainFrame クラスの動作の定義を行います。
 //
 
 #include "stdafx.h"

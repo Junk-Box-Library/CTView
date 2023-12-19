@@ -1,4 +1,4 @@
-// MGRFrame.cpp : インプリメンテーション ファイル
+﻿// MGRFrame.cpp : インプリメンテーション ファイル
 //
 
 #include "stdafx.h"

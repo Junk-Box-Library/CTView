@@ -1,4 +1,4 @@
-
+﻿
 #ifndef  _STATUS_CHECK_H
 #define  _STATUS_CHECK_H
 
@@ -37,11 +37,11 @@
 
 
 // 領域検査でのエラー情報
-#define  RGN_ERR_OVLP	-401		// 領域が親領域とオーバーラップしていない．
-#define  RGN_ERR_CMPLX	-402		// 領域の形が複雑すぎる．（分散度が大きすぎる）
-#define  RGN_ERR_SMALL  -403		// 領域が小さすぎる．
-#define  RGN_ERR_BIG    -404		// 領域が大きすぎる．
-#define  RGN_ERR_EXT    -405		// 処理対処外の領域．
+#define  RGN_ERR_OVLP   -401        // 領域が親領域とオーバーラップしていない．
+#define  RGN_ERR_CMPLX  -402        // 領域の形が複雑すぎる．（分散度が大きすぎる）
+#define  RGN_ERR_SMALL  -403        // 領域が小さすぎる．
+#define  RGN_ERR_BIG    -404        // 領域が大きすぎる．
+#define  RGN_ERR_EXT    -405        // 処理対処外の領域．
 
 
 
@@ -53,23 +53,23 @@ void    chk_blood_unit  (RgnStat ns, RgnStat** gs, int nn);
 void    chk_blood_glvl  (RgnStat ns, RgnStat** gs, int nn);
 
 // 気管支
-void	chk_bronchus_region(RgnStat ns, RgnStat** gs, int nn, int md); 
-void	chk_bronchus_unit  (RgnStat ns, RgnStat** gs, int nn);
-void	chk_bronchus_glvl  (RgnStat ns, RgnStat** gs, int nn);
+void    chk_bronchus_region(RgnStat ns, RgnStat** gs, int nn, int md); 
+void    chk_bronchus_unit  (RgnStat ns, RgnStat** gs, int nn);
+void    chk_bronchus_glvl  (RgnStat ns, RgnStat** gs, int nn);
 
 // オブジェクト
-void	chk_objects_region(RgnStat ns, RgnStat** gs, int nn, int md); 
-void	chk_objects_unit  (RgnStat ns, RgnStat** gs, int nn);
-void	chk_objects_glvl  (RgnStat ns, RgnStat** gs, int nn);
+void    chk_objects_region(RgnStat ns, RgnStat** gs, int nn, int md); 
+void    chk_objects_unit  (RgnStat ns, RgnStat** gs, int nn);
+void    chk_objects_glvl  (RgnStat ns, RgnStat** gs, int nn);
 
 
 
-bool	next_region_check   (RgnStat ns, RgnStat gs, double p);
-int		overlap_region_check(RgnStat ns, RgnStat gs, int limit);
+bool    next_region_check   (RgnStat ns, RgnStat gs, double p);
+int     overlap_region_check(RgnStat ns, RgnStat gs, int limit);
 
-double	loop_region_check  (MSGraph<sWord> gx, RgnStat* gs, double rx);
-bool	inter_region_check (MSGraph<sWord> gd, RgnStat* ps, RgnStat* ns, int sm);
-bool	inter_duppath_check(MSGraph<sWord> gx, RgnStat* ps, RgnStat* ns);
+double  loop_region_check  (MSGraph<sWord> gx, RgnStat* gs, double rx);
+bool    inter_region_check (MSGraph<sWord> gd, RgnStat* ps, RgnStat* ns, int sm);
+bool    inter_duppath_check(MSGraph<sWord> gx, RgnStat* ps, RgnStat* ns);
 
 
 #endif

@@ -1,4 +1,4 @@
-
+﻿
 #ifndef  __CT_MFCLIB_CMGRSIMPLEFRAME_H__
 #define  __CT_MFCLIB_CMGRSIMPLEFRAME_H__
 
