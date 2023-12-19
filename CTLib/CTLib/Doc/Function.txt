@@ -1,0 +1,18 @@
+pre_scan_top_plane() Å® get_region() 
+
+
+get_region() Å® pre_cut_region() Å® cut_color()
+             Å® cut_region()
+             Å® rsorting()
+             Å® chk_region()
+             Å® nsorting()
+
+
+
+
+RecursiveRegionSearch() 
+	get_region_paint_first()
+	start_search_tree()  tree.c
+		search_tree()
+			labeling()
+			search_tree()

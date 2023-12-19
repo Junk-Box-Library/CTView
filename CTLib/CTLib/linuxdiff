@@ -1,0 +1,32 @@
+#!/bin/sh
+
+LINUX_TOP=../../../linux/CT/CTLib
+WIN_TOP=./
+
+
+if [ $# -lt 1 ]; then
+	echo usage ... $0 file_name
+   	exit
+fi
+
+
+LF=$LINUX_TOP/$1
+WF=$WIN_TOP/$1
+
+
+if [ ! -f $LF ]; then
+    echo "Linux file $LF is not found!!"
+    exit
+fi
+
+if [ ! -f $WF ]; then
+    echo "Windows file $WF is not found!!"
+    exit
+fi
+
+
+nkf -ed $WF >| $WF.temp
+diff $WF.temp $LF
+rm -rf $WF.temp
+
+

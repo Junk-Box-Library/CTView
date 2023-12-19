@@ -1,0 +1,75 @@
+
+// 領域の状態を表す
+
+struct  rgn_stat {
+    double	xx;			// ワールド座標系での領域の重心のX座標				in GV 
+    double	yy;			// ワールド座標系での領域の重心のY座標				in GV 
+    double	zz;			// ワールド座標系での領域の重心のZ座標				in GV 
+    double	px;			// ワールド座標系での領域の単位方向ベクトルの X成分		in RL & GV 
+    double	py;			// ワールド座標系での領域の単位方向ベクトルの Y成分		in RL & GV 
+    double	pz;			// ワールド座標系での領域の単位方向ベクトルの Z成分		in RL & GV 
+    double	ex;			// ワールド座標系での次の領域への単位方向ベクトルの X成分	in RL & GV 
+    double	ey;			// ワールド座標系での次の領域への単位方向ベクトルの Y成分	in RL & GV 
+    double	ez;			// ワールド座標系での次の領域への単位方向ベクトルの Z成分	in RL & GV 
+
+    int		os;			// 観測面の X,Yサイズ
+    int		xs;			// 領域面の X(y')サイズ						in CR 
+    int		ys;			// 領域面の Y(z')サイズ						in CR 
+    int		sx;			// 観測面での領域面の左上隅の X座標				in CR 
+    int		sy;			// 観測面での領域面の左上隅の Y座標				in CR 
+    int		wx;			// 領域面での領域の重心の X座標					in CR 
+    int		wy;			// 領域面での領域の重心の Y座標					in CR 
+    int		ux;			// 領域面での領域の重心に最も近い領域上の点の X座標		in CR 
+    int		uy;			// 領域面での領域の重心に最も近い領域上の点の Y座標		in CR 
+    Word*	gp; 			// 領域のイメージ						in CR 
+
+    int		ss;			// 面積								in CR 
+    int		rr;			// 半径（ユークリッド距離による）				in CR 
+    double	ra;			// 半径　2*ss/sr						in CR 
+    double	sr;			// 外周長（斜めは√2）						in CR 
+    double	su;			// 外周長 (by iseki's method)					in CR 
+    double	fg;			// 分散度（円形度の逆数  by iseki's method）			in CR 
+    int		dg;			// 輝度値の平均							in CR 
+    int		r2;			// 重心と観測面（ローカル座標）の中心の距離の2乗		in CR 
+    int		mo;			// 領域の重心の周りの統計的分散の2乗（モーメント）		in CR 
+    int		vx;			// 領域のサイズ							in LA 
+    int		vs;			// 次の観測面のX,Yサイズ　例) vs= 2*vx+2 
+
+    int		tn;			// 木番号							in SST
+    int		bn;			// 枝番号							in LA 
+    int		nc;			// 領域番号							in ST 
+    int		rn;			// 分岐の深さ（木の根からこの領域までの分岐回数）　　		in LA 
+    int		np;			// 親領域の領域番号　						in CR 
+    int		bp;			// 親枝の枝番号　						in LA 
+    int		pn;			// 親領域での分岐数（姉妹領域の数）　				in LA 
+    int		pi;			// 補間領域を無視した場合の子領域の番号　			in IP 
+    int		nn;			// 子領域の数（分岐数）						in LA 
+    int		nx[NXTRG_MAXNO];	// 子領域の領域番号（ポインタ）　			             
+
+    int		mh;			// これ以上の輝度値は無視（固定）
+    int		mx;			// 閾値探索の上限（領域により変化，mhを超えない）
+    int		mm;			// 閾値								in PU 
+    int		mn;			// 閾値探索の加減（領域により変化，mlを下回らない）		in CR 
+    int		ml;			// これ以下の輝度値は無視（固定）
+    int     	zr;			// 処理上ゼロとみなす輝度値 < ml
+
+    bool	ip;			// 領域間の補間を行うか？					in IP 
+    bool	st;			// 木の一番最初の領域か?                                 
+    bool	sb;			// 枝の一番最初の領域か?                                 
+    bool	nr;			// 適当な領域か？　true: OK, false: NG
+    int		at;			// 領域の属性
+
+
+    int		un;			// その枝の総領域数．　ループ度計算に使用                         
+    int		on;			// その枝の重複領域数．ループ度計算に使用                         
+    int		ob;			// 領域が少しでも親枝と重なっている場合は親枝の番号                      
+    bool	or;			// この領域は重複しているか？                                
+    double	ov;			// 領域の重複度                         
+    bool	lt;			// 領域を含む枝はループしているか                      
+
+//   int		u1;		// 多目的用１	// その枝の総領域数．　ループ度計算に使用                         
+//   int		u2;		// 多目的用２	// その枝の重複領域数．ループ度計算に使用                         
+//   int		u3;		// 多目的用３	// 領域が少しでも親枝と重なっている場合は親枝の番号                      
+//   int		u4;		// 多目的用４                         
+//   int		wk;		// 作業用                            
+};
