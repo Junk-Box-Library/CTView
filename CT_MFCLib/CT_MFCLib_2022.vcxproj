@@ -97,7 +97,7 @@
     </Midl>
     <ClCompile>
       <Optimization>Disabled</Optimization>
-      <AdditionalIncludeDirectories>..\..\CT\CTLib;..\..\JunkBox_Lib++\GraphLib;..\..\JunkBox_Lib++\BasicLib;..\..\JunkBox_Lib++\MathLib;..\..\JunkBox_Lib++\BasicLib\Lib;..\..\JunkBox_Win_Lib\WinBaseLib;..\..\JunkBox_Win_Lib\DLGBoxLib;..\..\JunkBox_Win_Lib\MFCLib;..\..\JunkBox_Win_Lib\MFCBaseLib;<IncludePath>$(IncludePath);$(DXSDK_DIR)Include</IncludePath>;C:\Program Files (x86)\Microsoft DirectX SDK (June 2010)\Include;..\..\magdb142</AdditionalIncludeDirectories>
+      <AdditionalIncludeDirectories>..\CTLib\CTLib;..\..\JunkBox_Lib++\GraphLib;..\..\JunkBox_Lib++\BasicLib;..\..\JunkBox_Lib++\MathLib;..\..\JunkBox_Lib++\BasicLib\Lib;..\..\JunkBox_Win_Lib\WinBaseLib;..\..\JunkBox_Win_Lib\DLGBoxLib;..\..\JunkBox_Win_Lib\MFCLib;..\..\JunkBox_Win_Lib\MFCBaseLib;<IncludePath>$(IncludePath);$(DXSDK_DIR)Include</IncludePath>;C:\Program Files (x86)\Microsoft DirectX SDK (June 2010)\Include;..\..\magdb142</AdditionalIncludeDirectories>
       <PreprocessorDefinitions>WIN32;_WINDOWS;_DEBUG;_LIB;_UNICODE;%(PreprocessorDefinitions)</PreprocessorDefinitions>
       <MinimalRebuild>false</MinimalRebuild>
       <BasicRuntimeChecks>EnableFastChecks</BasicRuntimeChecks>
@@ -121,7 +121,7 @@
     </Midl>
     <ClCompile>
       <Optimization>Disabled</Optimization>
-      <AdditionalIncludeDirectories>..\..\CT\CTLib;..\..\JunkBox_Lib++\GraphLib;..\..\JunkBox_Lib++\BasicLib;..\..\JunkBox_Lib++\MathLib;..\..\JunkBox_Lib++\BasicLib\Lib;..\..\JunkBox_Win_Lib\WinBaseLib;..\..\JunkBox_Win_Lib\DLGBoxLib;..\..\JunkBox_Win_Lib\MFCLib;..\..\JunkBox_Win_Lib\MFCBaseLib;<IncludePath>$(IncludePath);$(DXSDK_DIR)Include</IncludePath>;C:\Program Files (x86)\Microsoft DirectX SDK (June 2010)\Include</AdditionalIncludeDirectories>
+      <AdditionalIncludeDirectories>..\CTLib\CTLib;..\..\JunkBox_Lib++\GraphLib;..\..\JunkBox_Lib++\BasicLib;..\..\JunkBox_Lib++\MathLib;..\..\JunkBox_Lib++\BasicLib\Lib;..\..\JunkBox_Win_Lib\WinBaseLib;..\..\JunkBox_Win_Lib\DLGBoxLib;..\..\JunkBox_Win_Lib\MFCLib;..\..\JunkBox_Win_Lib\MFCBaseLib;<IncludePath>$(IncludePath);$(DXSDK_DIR)Include</IncludePath>;C:\Program Files (x86)\Microsoft DirectX SDK (June 2010)\Include</AdditionalIncludeDirectories>
       <PreprocessorDefinitions>WIN32;WIN64;_WINDOWS;_DEBUG;_LIB;_UNICODE;%(PreprocessorDefinitions)</PreprocessorDefinitions>
       <MinimalRebuild>false</MinimalRebuild>
       <BasicRuntimeChecks>EnableFastChecks</BasicRuntimeChecks>
@@ -146,7 +146,7 @@
     <ClCompile>
       <Optimization>Full</Optimization>
       <FavorSizeOrSpeed>Speed</FavorSizeOrSpeed>
-      <AdditionalIncludeDirectories>..\..\CT\CTLib;..\..\JunkBox_Lib++\GraphLib;..\..\JunkBox_Lib++\BasicLib;..\..\JunkBox_Lib++\MathLib;..\..\JunkBox_Lib++\BasicLib\Lib;..\..\JunkBox_Win_Lib\WinBaseLib;..\..\JunkBox_Win_Lib\DLGBoxLib;..\..\JunkBox_Win_Lib\MFCLib;..\..\JunkBox_Win_Lib\MFCBaseLib;<IncludePath>$(IncludePath);$(DXSDK_DIR)Include</IncludePath>;C:\Program Files (x86)\Microsoft DirectX SDK (June 2010)\Include</AdditionalIncludeDirectories>
+      <AdditionalIncludeDirectories>..\CTLib\CTLib;..\..\JunkBox_Lib++\GraphLib;..\..\JunkBox_Lib++\BasicLib;..\..\JunkBox_Lib++\MathLib;..\..\JunkBox_Lib++\BasicLib\Lib;..\..\JunkBox_Win_Lib\WinBaseLib;..\..\JunkBox_Win_Lib\DLGBoxLib;..\..\JunkBox_Win_Lib\MFCLib;..\..\JunkBox_Win_Lib\MFCBaseLib;<IncludePath>$(IncludePath);$(DXSDK_DIR)Include</IncludePath>;C:\Program Files (x86)\Microsoft DirectX SDK (June 2010)\Include</AdditionalIncludeDirectories>
       <PreprocessorDefinitions>WIN32;_WINDOWS;NDEBUG;_LIB;_UNICODE;%(PreprocessorDefinitions)</PreprocessorDefinitions>
       <MinimalRebuild>false</MinimalRebuild>
       <RuntimeLibrary>MultiThreaded</RuntimeLibrary>
@@ -175,7 +175,7 @@
     <ClCompile>
       <Optimization>Full</Optimization>
       <FavorSizeOrSpeed>Speed</FavorSizeOrSpeed>
-      <AdditionalIncludeDirectories>..\..\CT\CTLib;..\..\JunkBox_Lib++\GraphLib;..\..\JunkBox_Lib++\BasicLib;..\..\JunkBox_Lib++\MathLib;..\..\JunkBox_Lib++\BasicLib\Lib;..\..\JunkBox_Win_Lib\WinBaseLib;..\..\JunkBox_Win_Lib\DLGBoxLib;..\..\JunkBox_Win_Lib\MFCLib;..\..\JunkBox_Win_Lib\MFCBaseLib;<IncludePath>$(IncludePath);$(DXSDK_DIR)Include</IncludePath>;C:\Program Files (x86)\Microsoft DirectX SDK (June 2010)\Include</AdditionalIncludeDirectories>
+      <AdditionalIncludeDirectories>..\CTLib\CTLib;..\..\JunkBox_Lib++\GraphLib;..\..\JunkBox_Lib++\BasicLib;..\..\JunkBox_Lib++\MathLib;..\..\JunkBox_Lib++\BasicLib\Lib;..\..\JunkBox_Win_Lib\WinBaseLib;..\..\JunkBox_Win_Lib\DLGBoxLib;..\..\JunkBox_Win_Lib\MFCLib;..\..\JunkBox_Win_Lib\MFCBaseLib;<IncludePath>$(IncludePath);$(DXSDK_DIR)Include</IncludePath>;C:\Program Files (x86)\Microsoft DirectX SDK (June 2010)\Include</AdditionalIncludeDirectories>
       <PreprocessorDefinitions>WIN32;WIN64;_WINDOWS;NDEBUG;_LIB;_UNICODE;%(PreprocessorDefinitions)</PreprocessorDefinitions>
       <MinimalRebuild>false</MinimalRebuild>
       <RuntimeLibrary>MultiThreaded</RuntimeLibrary>

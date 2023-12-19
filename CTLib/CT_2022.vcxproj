@@ -80,7 +80,7 @@
     <ClCompile>
       <Optimization>Disabled</Optimization>
       <InlineFunctionExpansion>Default</InlineFunctionExpansion>
-      <AdditionalIncludeDirectories>..\JunkBox_Lib++\BasicLib;..\JunkBox_Lib++\MathLib;..\JunkBox_Lib++\GraphLib;..\JunkBox_Lib++\BasicLib\Lib;.\CTLib;..\magdb142</AdditionalIncludeDirectories>
+      <AdditionalIncludeDirectories>..\..\JunkBox_Lib++\BasicLib;..\..\JunkBox_Lib++\MathLib;..\..\JunkBox_Lib++\GraphLib;..\..\JunkBox_Lib++\BasicLib\Lib;.\CTLib;..\magdb142</AdditionalIncludeDirectories>
       <PreprocessorDefinitions>WIN32;_DEBUG;_LIB;_UNICODE;EBUG;%(PreprocessorDefinitions)</PreprocessorDefinitions>
       <MinimalRebuild>false</MinimalRebuild>
       <BasicRuntimeChecks>EnableFastChecks</BasicRuntimeChecks>
@@ -95,7 +95,7 @@
     <ClCompile>
       <Optimization>Disabled</Optimization>
       <InlineFunctionExpansion>Default</InlineFunctionExpansion>
-      <AdditionalIncludeDirectories>..\JunkBox_Lib++\BasicLib;..\JunkBox_Lib++\MathLib;..\JunkBox_Lib++\GraphLib;..\JunkBox_Lib++\BasicLib\Lib;.\CTLib;..\magdb142</AdditionalIncludeDirectories>
+      <AdditionalIncludeDirectories>..\..\JunkBox_Lib++\BasicLib;..\..\JunkBox_Lib++\MathLib;..\..\JunkBox_Lib++\GraphLib;..\..\JunkBox_Lib++\BasicLib\Lib;.\CTLib</AdditionalIncludeDirectories>
       <PreprocessorDefinitions>WIN32;WIN64;_DEBUG;_LIB;_UNICODE;EBUG;%(PreprocessorDefinitions)</PreprocessorDefinitions>
       <MinimalRebuild>false</MinimalRebuild>
       <BasicRuntimeChecks>EnableFastChecks</BasicRuntimeChecks>
@@ -112,7 +112,7 @@
       <InlineFunctionExpansion>AnySuitable</InlineFunctionExpansion>
       <FavorSizeOrSpeed>Speed</FavorSizeOrSpeed>
       <WholeProgramOptimization>false</WholeProgramOptimization>
-      <AdditionalIncludeDirectories>..\JunkBox_Lib++\BasicLib;..\JunkBox_Lib++\MathLib;..\JunkBox_Lib++\GraphLib;..\JunkBox_Lib++\BasicLib\Lib;.\CTLib</AdditionalIncludeDirectories>
+      <AdditionalIncludeDirectories>..\..\JunkBox_Lib++\BasicLib;..\..\JunkBox_Lib++\MathLib;..\..\JunkBox_Lib++\GraphLib;..\..\JunkBox_Lib++\BasicLib\Lib;.\CTLib</AdditionalIncludeDirectories>
       <PreprocessorDefinitions>WIN32;NDEBUG;_LIB;_UNICODE;%(PreprocessorDefinitions)</PreprocessorDefinitions>
       <RuntimeLibrary>MultiThreaded</RuntimeLibrary>
       <PrecompiledHeader />
@@ -126,7 +126,7 @@
       <InlineFunctionExpansion>AnySuitable</InlineFunctionExpansion>
       <FavorSizeOrSpeed>Speed</FavorSizeOrSpeed>
       <WholeProgramOptimization>false</WholeProgramOptimization>
-      <AdditionalIncludeDirectories>..\JunkBox_Lib++\BasicLib;..\JunkBox_Lib++\MathLib;..\JunkBox_Lib++\GraphLib;..\JunkBox_Lib++\BasicLib\Lib;.\CTLib</AdditionalIncludeDirectories>
+      <AdditionalIncludeDirectories>..\..\JunkBox_Lib++\BasicLib;..\..\JunkBox_Lib++\MathLib;..\..\JunkBox_Lib++\GraphLib;..\..\JunkBox_Lib++\BasicLib\Lib;.\CTLib</AdditionalIncludeDirectories>
       <PreprocessorDefinitions>WIN32;WIN64;NDEBUG;_LIB;_UNICODE;%(PreprocessorDefinitions)</PreprocessorDefinitions>
       <RuntimeLibrary>MultiThreaded</RuntimeLibrary>
       <PrecompiledHeader>

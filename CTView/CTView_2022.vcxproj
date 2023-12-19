@@ -114,7 +114,7 @@
     <ClCompile>
       <Optimization>Disabled</Optimization>
       <InlineFunctionExpansion>Default</InlineFunctionExpansion>
-      <AdditionalIncludeDirectories>..\CT_MFCLib;..\..\CT\CTLib;..\..\JunkBox_Lib++\MathLib;..\..\JunkBox_Lib++\BasicLib;..\..\JunkBox_Lib++\GraphLib;..\..\JunkBox_Lib++\BasicLib\Lib;..\..\JunkBox_Win_Lib\WinBaseLib;..\..\JunkBox_Win_Lib\DLGBoxLib;..\..\JunkBox_Win_Lib\MFCLib;..\..\JunkBox_Win_Lib\MFCBaseLib;..\..\JunkBox_Lib++\ExtendLib;..\..\JunkBox_Lib++\ExtendLib\xLib;<IncludePath>$(IncludePath);$(DXSDK_DIR)Include</IncludePath>;C:\Program Files (x86)\Microsoft DirectX SDK (June 2010)\Include</AdditionalIncludeDirectories>
+      <AdditionalIncludeDirectories>..\CT_MFCLib;..\CTLib\CTLib;..\..\JunkBox_Lib++\MathLib;..\..\JunkBox_Lib++\BasicLib;..\..\JunkBox_Lib++\GraphLib;..\..\JunkBox_Lib++\BasicLib\Lib;..\..\JunkBox_Win_Lib\WinBaseLib;..\..\JunkBox_Win_Lib\DLGBoxLib;..\..\JunkBox_Win_Lib\MFCLib;..\..\JunkBox_Win_Lib\MFCBaseLib;..\..\JunkBox_Lib++\ExtendLib;..\..\JunkBox_Lib++\ExtendLib\xLib;<IncludePath>$(IncludePath);$(DXSDK_DIR)Include</IncludePath>;C:\Program Files (x86)\Microsoft DirectX SDK (June 2010)\Include</AdditionalIncludeDirectories>
       <PreprocessorDefinitions>WIN32;_DEBUG;_UNICODE;_WINDOWS;%(PreprocessorDefinitions)</PreprocessorDefinitions>
       <StringPooling>true</StringPooling>
       <BasicRuntimeChecks>EnableFastChecks</BasicRuntimeChecks>
@@ -142,7 +142,7 @@
 ;JunkBox_Lib++.lib;jpeg.lib;%(AdditionalDependencies)</AdditionalDependencies>
       <OutputFile>.\Debug/CTView.exe</OutputFile>
       <SuppressStartupBanner>true</SuppressStartupBanner>
-      <AdditionalLibraryDirectories>..\..\JunkBox_Lib++\Debug;..\..\JunkBox_Win_Lib\Debug;..\..\CT\Debug;..\CT_MFCLib\Debug;<LibraryPath>$(LibraryPath);$(DXSDK_DIR)Lib\x86</LibraryPath>;C:\DXSDK\Lib\x86;C:\Program Files (x86)\Microsoft DirectX SDK (June 2010)\Lib\x86;..\..\jpeg-9c\Release;%(AdditionalLibraryDirectories)</AdditionalLibraryDirectories>
+      <AdditionalLibraryDirectories>..\..\JunkBox_Lib++\Debug;..\..\JunkBox_Win_Lib\Debug;..\CTLib\Debug;..\CT_MFCLib\Debug;<LibraryPath>$(LibraryPath);$(DXSDK_DIR)Lib\x86</LibraryPath>;C:\DXSDK\Lib\x86;C:\Program Files (x86)\Microsoft DirectX SDK (June 2010)\Lib\x86;..\..\jpeg-9c\Release;%(AdditionalLibraryDirectories)</AdditionalLibraryDirectories>
       <IgnoreSpecificDefaultLibraries>LIBCMT;MSVCRT;%(IgnoreSpecificDefaultLibraries)</IgnoreSpecificDefaultLibraries>
       <GenerateDebugInformation>true</GenerateDebugInformation>
       <ProgramDatabaseFile>.\Debug/CTView.pdb</ProgramDatabaseFile>
@@ -167,7 +167,7 @@
     <ClCompile>
       <Optimization>Disabled</Optimization>
       <InlineFunctionExpansion>Default</InlineFunctionExpansion>
-      <AdditionalIncludeDirectories>..\CT_MFCLib;..\..\CT\CTLib;..\..\JunkBox_Lib++\MathLib;..\..\JunkBox_Lib++\BasicLib;..\..\JunkBox_Lib++\GraphLib;..\..\JunkBox_Lib++\BasicLib\Lib;..\..\JunkBox_Win_Lib\WinBaseLib;..\..\JunkBox_Win_Lib\DLGBoxLib;..\..\JunkBox_Win_Lib\MFCLib;..\..\JunkBox_Win_Lib\MFCBaseLib;..\..\JunkBox_Lib++\ExtendLib;..\..\JunkBox_Lib++\ExtendLib\xLib;<IncludePath>$(IncludePath);$(DXSDK_DIR)Include</IncludePath>;C:\Program Files (x86)\Microsoft DirectX SDK (June 2010)\Include;..\..\magdb142</AdditionalIncludeDirectories>
+      <AdditionalIncludeDirectories>..\CT_MFCLib;..\CTLib\CTLib;..\..\JunkBox_Lib++\MathLib;..\..\JunkBox_Lib++\BasicLib;..\..\JunkBox_Lib++\GraphLib;..\..\JunkBox_Lib++\BasicLib\Lib;..\..\JunkBox_Win_Lib\WinBaseLib;..\..\JunkBox_Win_Lib\DLGBoxLib;..\..\JunkBox_Win_Lib\MFCLib;..\..\JunkBox_Win_Lib\MFCBaseLib;..\..\JunkBox_Lib++\ExtendLib;..\..\JunkBox_Lib++\ExtendLib\xLib;<IncludePath>$(IncludePath);$(DXSDK_DIR)Include</IncludePath>;C:\Program Files (x86)\Microsoft DirectX SDK (June 2010)\Include;..\..\magdb142</AdditionalIncludeDirectories>
       <PreprocessorDefinitions>WIN32;WIN64;_DEBUG;_UNICODE;_WINDOWS;%(PreprocessorDefinitions)</PreprocessorDefinitions>
       <StringPooling>true</StringPooling>
       <BasicRuntimeChecks>Default</BasicRuntimeChecks>
@@ -195,7 +195,7 @@
 ;JunkBox_Lib++.lib;jpeg.lib;%(AdditionalDependencies)</AdditionalDependencies>
       <OutputFile>$(SolutionDir)$(Platform)\$(Configuration)\CTView.exe</OutputFile>
       <SuppressStartupBanner>true</SuppressStartupBanner>
-      <AdditionalLibraryDirectories>..\..\JunkBox_Lib++\Debug64;..\..\JunkBox_Win_Lib\Debug64;..\..\CT\x64\Debug;..\CT_MFCLib\x64\Debug;<LibraryPath>$(LibraryPath);$(DXSDK_DIR)Lib\x64</LibraryPath>;C:\Program Files (x86)\Microsoft DirectX SDK (June 2010)\Lib\x64;..\..\jpeg-9c\x64\Release</AdditionalLibraryDirectories>
+      <AdditionalLibraryDirectories>..\..\JunkBox_Lib++\Debug64;..\..\JunkBox_Win_Lib\Debug64;..\CTLib\x64\Debug;..\CT_MFCLib\x64\Debug;<LibraryPath>$(LibraryPath);$(DXSDK_DIR)Lib\x64</LibraryPath>;C:\Program Files (x86)\Microsoft DirectX SDK (June 2010)\Lib\x64;..\..\jpeg-9c\x64\Release</AdditionalLibraryDirectories>
       <IgnoreSpecificDefaultLibraries>LIBCMT;MSVCRT;%(IgnoreSpecificDefaultLibraries)</IgnoreSpecificDefaultLibraries>
       <GenerateDebugInformation>true</GenerateDebugInformation>
       <ProgramDatabaseFile>.\Debug/CTView.pdb</ProgramDatabaseFile>
@@ -220,7 +220,7 @@
     <ClCompile>
       <Optimization>Full</Optimization>
       <InlineFunctionExpansion>OnlyExplicitInline</InlineFunctionExpansion>
-      <AdditionalIncludeDirectories>..\CT_MFCLib;..\..\CT\CTLib;..\..\JunkBox_Lib++\MathLib;..\..\JunkBox_Lib++\BasicLib;..\..\JunkBox_Lib++\GraphLib;..\..\JunkBox_Lib++\BasicLib\Lib;..\..\JunkBox_Win_Lib\WinBaseLib;..\..\JunkBox_Win_Lib\DLGBoxLib;..\..\JunkBox_Win_Lib\MFCLib;..\..\JunkBox_Win_Lib\MFCBaseLib;..\..\JunkBox_Lib++\ExtendLib;..\..\JunkBox_Lib++\ExtendLib\xLib;<IncludePath>$(IncludePath);$(DXSDK_DIR)Include</IncludePath>;C:\Program Files (x86)\Microsoft DirectX SDK (June 2010)\Include</AdditionalIncludeDirectories>
+      <AdditionalIncludeDirectories>..\CT_MFCLib;..\CTLib\CTLib;..\..\JunkBox_Lib++\MathLib;..\..\JunkBox_Lib++\BasicLib;..\..\JunkBox_Lib++\GraphLib;..\..\JunkBox_Lib++\BasicLib\Lib;..\..\JunkBox_Win_Lib\WinBaseLib;..\..\JunkBox_Win_Lib\DLGBoxLib;..\..\JunkBox_Win_Lib\MFCLib;..\..\JunkBox_Win_Lib\MFCBaseLib;..\..\JunkBox_Lib++\ExtendLib;..\..\JunkBox_Lib++\ExtendLib\xLib;<IncludePath>$(IncludePath);$(DXSDK_DIR)Include</IncludePath>;C:\Program Files (x86)\Microsoft DirectX SDK (June 2010)\Include</AdditionalIncludeDirectories>
       <PreprocessorDefinitions>WIN32;NDEBUG;_UNICODE;_WINDOWS;HAVE_JPEGLIB_H;%(PreprocessorDefinitions)</PreprocessorDefinitions>
       <StringPooling>true</StringPooling>
       <RuntimeLibrary>MultiThreaded</RuntimeLibrary>
@@ -246,7 +246,7 @@
 ;JunkBox_Lib++.lib;jpeg.lib;%(AdditionalDependencies)</AdditionalDependencies>
       <OutputFile>.\Release/CTView.exe</OutputFile>
       <SuppressStartupBanner>true</SuppressStartupBanner>
-      <AdditionalLibraryDirectories>..\..\JunkBox_Lib++\Release;..\..\JunkBox_Win_Lib\Release;..\..\CT\Release;..\CT_MFCLib\Release;<LibraryPath>$(LibraryPath);$(DXSDK_DIR)Lib\x86</LibraryPath>;C:\DXSDK\Lib\x86;C:\Program Files (x86)\Microsoft DirectX SDK (June 2010)\Lib\x86;..\..\jpeg-9c\Release;%(AdditionalLibraryDirectories)</AdditionalLibraryDirectories>
+      <AdditionalLibraryDirectories>..\..\JunkBox_Lib++\Release;..\..\JunkBox_Win_Lib\Release;..\CTLib\Release;..\CT_MFCLib\Release;<LibraryPath>$(LibraryPath);$(DXSDK_DIR)Lib\x86</LibraryPath>;C:\DXSDK\Lib\x86;C:\Program Files (x86)\Microsoft DirectX SDK (June 2010)\Lib\x86;..\..\jpeg-9c\Release;%(AdditionalLibraryDirectories)</AdditionalLibraryDirectories>
       <IgnoreAllDefaultLibraries>false</IgnoreAllDefaultLibraries>
       <IgnoreSpecificDefaultLibraries>LIBCMTD;MSVCRT;%(IgnoreSpecificDefaultLibraries)</IgnoreSpecificDefaultLibraries>
       <DelayLoadDLLs>%(DelayLoadDLLs)</DelayLoadDLLs>
@@ -271,7 +271,7 @@
     <ClCompile>
       <Optimization>Full</Optimization>
       <InlineFunctionExpansion>OnlyExplicitInline</InlineFunctionExpansion>
-      <AdditionalIncludeDirectories>..\CT_MFCLib;..\..\CT\CTLib;..\..\JunkBox_Lib++\MathLib;..\..\JunkBox_Lib++\BasicLib;..\..\JunkBox_Lib++\GraphLib;..\..\JunkBox_Lib++\BasicLib\Lib;..\..\JunkBox_Win_Lib\WinBaseLib;..\..\JunkBox_Win_Lib\DLGBoxLib;..\..\JunkBox_Win_Lib\MFCLib;..\..\JunkBox_Win_Lib\MFCBaseLib;..\..\JunkBox_Lib++\ExtendLib;..\..\JunkBox_Lib++\ExtendLib\xLib;<IncludePath>$(IncludePath);$(DXSDK_DIR)Include</IncludePath>;C:\Program Files (x86)\Microsoft DirectX SDK (June 2010)\Include</AdditionalIncludeDirectories>
+      <AdditionalIncludeDirectories>..\CT_MFCLib;..\CTLib\CTLib;..\..\JunkBox_Lib++\MathLib;..\..\JunkBox_Lib++\BasicLib;..\..\JunkBox_Lib++\GraphLib;..\..\JunkBox_Lib++\BasicLib\Lib;..\..\JunkBox_Win_Lib\WinBaseLib;..\..\JunkBox_Win_Lib\DLGBoxLib;..\..\JunkBox_Win_Lib\MFCLib;..\..\JunkBox_Win_Lib\MFCBaseLib;..\..\JunkBox_Lib++\ExtendLib;..\..\JunkBox_Lib++\ExtendLib\xLib;<IncludePath>$(IncludePath);$(DXSDK_DIR)Include</IncludePath>;C:\Program Files (x86)\Microsoft DirectX SDK (June 2010)\Include</AdditionalIncludeDirectories>
       <PreprocessorDefinitions>WIN32;WIN64;NDEBUG;_WINDOWS;_UNICODE;HAVE_JPEGLIB_H;%(PreprocessorDefinitions)</PreprocessorDefinitions>
       <StringPooling>true</StringPooling>
       <RuntimeLibrary>MultiThreaded</RuntimeLibrary>
@@ -297,7 +297,7 @@
 ;JunkBox_Lib++.lib;jpeg.lib;%(AdditionalDependencies)</AdditionalDependencies>
       <OutputFile>$(SolutionDir)$(Platform)\$(Configuration)\CTView.exe</OutputFile>
       <SuppressStartupBanner>true</SuppressStartupBanner>
-      <AdditionalLibraryDirectories>..\..\JunkBox_Lib++\Release64;..\..\JunkBox_Win_Lib\Release64;..\..\CT\x64\Release;..\CT_MFCLib\x64\Release;<LibraryPath>$(LibraryPath);$(DXSDK_DIR)Lib\x64</LibraryPath>;..\..\jpeg-9c\x64\Release;C:\Program Files (x86)\Microsoft DirectX SDK (June 2010)\Lib\x64</AdditionalLibraryDirectories>
+      <AdditionalLibraryDirectories>..\..\JunkBox_Lib++\Release64;..\..\JunkBox_Win_Lib\Release64;..\CTLib\x64\Release;..\CT_MFCLib\x64\Release;<LibraryPath>$(LibraryPath);$(DXSDK_DIR)Lib\x64</LibraryPath>;..\..\jpeg-9c\x64\Release;C:\Program Files (x86)\Microsoft DirectX SDK (June 2010)\Lib\x64</AdditionalLibraryDirectories>
       <IgnoreAllDefaultLibraries>false</IgnoreAllDefaultLibraries>
       <IgnoreSpecificDefaultLibraries>LIBCMTD;MSVCRT;%(IgnoreSpecificDefaultLibraries)</IgnoreSpecificDefaultLibraries>
       <DelayLoadDLLs>%(DelayLoadDLLs)</DelayLoadDLLs>
