@@ -1,0 +1,340 @@
+// Microsoft Visual C++ generated resource script.
+//
+#include "resource.h"
+
+#define APSTUDIO_READONLY_SYMBOLS
+/////////////////////////////////////////////////////////////////////////////
+//
+// Generated from the TEXTINCLUDE 2 resource.
+//
+#include "afxres.h"
+
+/////////////////////////////////////////////////////////////////////////////
+#undef APSTUDIO_READONLY_SYMBOLS
+
+/////////////////////////////////////////////////////////////////////////////
+// 日本語 (日本) resources
+
+#if !defined(AFX_RESOURCE_DLL) || defined(AFX_TARG_JPN)
+LANGUAGE LANG_JAPANESE, SUBLANG_DEFAULT
+//#pragma code_page(932)
+#pragma code_page(65001)
+
+#ifdef APSTUDIO_INVOKED
+/////////////////////////////////////////////////////////////////////////////
+//
+// TEXTINCLUDE
+//
+
+1 TEXTINCLUDE 
+BEGIN
+    "resource.h\0"
+END
+
+2 TEXTINCLUDE 
+BEGIN
+    "#include ""afxres.h""\r\n"
+    "\0"
+END
+
+3 TEXTINCLUDE 
+BEGIN
+    "\r\n"
+    "\0"
+END
+
+#endif    // APSTUDIO_INVOKED
+
+
+/////////////////////////////////////////////////////////////////////////////
+//
+// Dialog
+//
+
+IDD_SETDLG DIALOGEX 0, 0, 115, 135
+STYLE DS_SETFONT | DS_MODALFRAME | WS_POPUP | WS_CAPTION | WS_SYSMENU
+CAPTION "動作モード設定"
+FONT 9, "ＭＳ Ｐゴシック", 0, 0, 0x0
+BEGIN
+    DEFPUSHBUTTON   "OK",IDOK,7,114,35,14
+    PUSHBUTTON      "キャンセル",IDCANCEL,73,114,35,14
+    CONTROL         "ボリュームの色付表示 (RGB)",IDC_SET_VCOLOR,"Button",BS_AUTOCHECKBOX | WS_TABSTOP,7,7,101,18
+    CONTROL         "Z軸を反転（CTの3D表示用）",IDC_SET_RVRSZ,"Button",BS_AUTOCHECKBOX | WS_TABSTOP,7,25,101,16
+    CONTROL         "分割描画モード（3D）",IDC_SET_DIVDRAW,"Button",BS_AUTOCHECKBOX | WS_TABSTOP,7,41,94,18
+    CONTROL         "コントラストの強制補正(2D)",IDC_SET_ATCNTRST,"Button",BS_AUTOCHECKBOX | WS_TABSTOP,7,61,94,10
+    EDITTEXT        IDC_SET_FBASE,61,85,47,13,ES_AUTOHSCROLL
+    LTEXT           "一時的な基底値",IDC_STATIC,7,89,49,10
+END
+
+IDD_REFNODLG DIALOGEX 0, 0, 125, 125
+STYLE DS_SETFONT | DS_MODALFRAME | WS_POPUP | WS_CAPTION | WS_SYSMENU
+CAPTION "メモリ参照数"
+FONT 9, "ＭＳ Ｐゴシック", 0, 0, 0x0
+BEGIN
+    DEFPUSHBUTTON   "OK",IDOK,39,104,41,14
+    RTEXT           "画像データ",IDC_STATIC,7,7,59,16,SS_CENTERIMAGE
+    CTEXT           "0",IDC_REFNO_DATA,70,7,47,16,SS_CENTERIMAGE | SS_SUNKEN
+    RTEXT           "ボリュームデータ",IDC_STATIC,7,26,59,16,SS_CENTERIMAGE
+    CTEXT           "0",IDC_REFNO_VOL,70,25,47,16,SS_CENTERIMAGE | SS_SUNKEN
+    RTEXT           "マルチスライス表示",IDC_STATIC,7,61,59,16,SS_CENTERIMAGE
+    CTEXT           "0",IDC_REFNO_MCT,70,61,47,16,SS_CENTERIMAGE | SS_SUNKEN
+    RTEXT           "サムネイル表示",IDC_STATIC,7,43,59,16,SS_CENTERIMAGE
+    CTEXT           "0",IDC_REFNO_TBN,70,43,47,16,SS_CENTERIMAGE | SS_SUNKEN
+END
+
+IDD_INFOBOX DIALOGEX 0, 0, 259, 164
+STYLE DS_SETFONT | DS_MODALFRAME | WS_POPUP | WS_CAPTION | WS_SYSMENU
+CAPTION "読み込み画像のデータ情報"
+FONT 9, "ＭＳ Ｐゴシック", 0, 0, 0x0
+BEGIN
+    DEFPUSHBUTTON   "OK",IDOK,109,145,41,14
+    RTEXT           "フォーマット",IDC_STATIC,5,8,33,16,SS_CENTERIMAGE
+    RTEXT           "X サイズ",IDC_STATIC,5,26,33,16,SS_CENTERIMAGE
+    RTEXT           "Y サイズ",IDC_STATIC,5,44,33,16,SS_CENTERIMAGE
+    RTEXT           "Z サイズ",IDC_STATIC,5,62,33,16,SS_CENTERIMAGE
+    RTEXT           "デプス",IDC_STATIC,5,80,33,16,SS_CENTERIMAGE
+    RTEXT           "最小値",IDC_STATIC,5,98,33,16,SS_CENTERIMAGE
+    RTEXT           "最大値",IDC_STATIC,5,116,33,16,SS_CENTERIMAGE
+    CTEXT           "",IDC_INFO_FORMAT,45,8,55,16,SS_CENTERIMAGE | SS_SUNKEN
+    CTEXT           "0",IDC_INFO_XSIZE,45,26,55,16,SS_CENTERIMAGE | SS_SUNKEN
+    CTEXT           "0",IDC_INFO_YSIZE,45,44,55,16,SS_CENTERIMAGE | SS_SUNKEN
+    CTEXT           "0",IDC_INFO_ZSIZE,45,62,55,16,SS_CENTERIMAGE | SS_SUNKEN
+    CTEXT           "0",IDC_INFO_DEPTH,45,80,55,16,SS_CENTERIMAGE | SS_SUNKEN
+    CTEXT           "0",IDC_INFO_MIN,45,98,55,16,SS_CENTERIMAGE | SS_SUNKEN
+    CTEXT           "0",IDC_INFO_MAX,45,116,55,16,SS_CENTERIMAGE | SS_SUNKEN
+    RTEXT           "Z方向歪",IDC_STATIC,106,8,50,16,SS_CENTERIMAGE
+    RTEXT           "基底値",IDC_STATIC,106,26,50,16,SS_CENTERIMAGE
+    RTEXT           "一時的な基底値",IDC_STATIC,106,44,50,16,SS_CENTERIMAGE
+    CTEXT           "0",IDC_INFO_RZXY,169,8,55,16,SS_CENTERIMAGE | SS_SUNKEN
+    CTEXT           "0",IDC_INFO_BASE,169,26,55,16,SS_CENTERIMAGE | SS_SUNKEN
+    CTEXT           "0",IDC_INFO_TEMPBASE,169,44,55,16,SS_CENTERIMAGE | SS_SUNKEN
+    RTEXT           "境界値",IDC_STATIC,105,65,21,16,SS_CENTERIMAGE
+    RTEXT           "X min",IDC_STATIC,106,80,18,16,SS_CENTERIMAGE
+    RTEXT           "X max",IDC_STATIC,182,80,18,16,SS_CENTERIMAGE
+    RTEXT           "Y min",IDC_STATIC,106,98,18,16,SS_CENTERIMAGE
+    RTEXT           "Y max",IDC_STATIC,182,98,18,16,SS_CENTERIMAGE
+    RTEXT           "Z min",IDC_STATIC,106,116,18,16,SS_CENTERIMAGE
+    RTEXT           "Z max",IDC_STATIC,182,116,18,16,SS_CENTERIMAGE
+    CTEXT           "0",IDC_INFO_XMIN,126,80,48,16,SS_CENTERIMAGE | SS_SUNKEN
+    CTEXT           "0",IDC_INFO_XMAX,202,80,48,16,SS_CENTERIMAGE | SS_SUNKEN
+    CTEXT           "0",IDC_INFO_YMIN,126,98,48,16,SS_CENTERIMAGE | SS_SUNKEN
+    CTEXT           "0",IDC_INFO_YMAX,202,98,48,16,SS_CENTERIMAGE | SS_SUNKEN
+    CTEXT           "0",IDC_INFO_ZMIN,126,116,48,16,SS_CENTERIMAGE | SS_SUNKEN
+    CTEXT           "0",IDC_INFO_ZMAX,202,116,48,16,SS_CENTERIMAGE | SS_SUNKEN
+END
+
+
+/////////////////////////////////////////////////////////////////////////////
+//
+// DESIGNINFO
+//
+
+#ifdef APSTUDIO_INVOKED
+GUIDELINES DESIGNINFO
+BEGIN
+    IDD_SETDLG, DIALOG
+    BEGIN
+        LEFTMARGIN, 7
+        RIGHTMARGIN, 108
+        TOPMARGIN, 7
+        BOTTOMMARGIN, 128
+    END
+
+    IDD_REFNODLG, DIALOG
+    BEGIN
+        LEFTMARGIN, 7
+        RIGHTMARGIN, 117
+        TOPMARGIN, 7
+        BOTTOMMARGIN, 118
+    END
+
+    IDD_INFOBOX, DIALOG
+    BEGIN
+        LEFTMARGIN, 5
+        RIGHTMARGIN, 251
+        TOPMARGIN, 8
+        BOTTOMMARGIN, 159
+    END
+END
+#endif    // APSTUDIO_INVOKED
+
+
+/////////////////////////////////////////////////////////////////////////////
+//
+// Toolbar
+//
+
+IDR_MGR TOOLBAR 16, 16
+BEGIN
+    BUTTON      ID_MGR_CONTRAST
+    SEPARATOR
+    BUTTON      ID_MGR_DUMMY
+    SEPARATOR
+    BUTTON      ID_MGR_TOVOL
+END
+
+IDR_SRNDR TOOLBAR 16, 16
+BEGIN
+    BUTTON      ID_SRNDR_OK
+    SEPARATOR
+    BUTTON      ID_SRNDR_DMMY
+    SEPARATOR
+    BUTTON      ID_SRNDR_CANCEL
+END
+
+IDR_MGR_TEMP TOOLBAR 16, 16
+BEGIN
+    BUTTON      ID_MGR_CONTRAST
+    SEPARATOR
+    BUTTON      ID_MGR_BACK
+    SEPARATOR
+    BUTTON      ID_MGR_TOVOL
+END
+
+
+/////////////////////////////////////////////////////////////////////////////
+//
+// Bitmap
+//
+
+IDR_MGR                 BITMAP                  "res\\bmp00001.bmp"
+IDR_SRNDR               BITMAP                  "res\\srndr.bmp"
+IDR_MGR_TEMP            BITMAP                  "res\\mgr1.bmp"
+#endif    // 日本語 (日本) resources
+/////////////////////////////////////////////////////////////////////////////
+
+
+/////////////////////////////////////////////////////////////////////////////
+// 英語 resources
+
+#if !defined(AFX_RESOURCE_DLL) || defined(AFX_TARG_ENU)
+LANGUAGE LANG_ENGLISH, SUBLANG_NEUTRAL
+#pragma code_page(1252)
+
+/////////////////////////////////////////////////////////////////////////////
+//
+// Dialog
+//
+
+IDD_REFNODLG DIALOGEX 0, 0, 125, 125
+STYLE DS_SETFONT | DS_MODALFRAME | WS_POPUP | WS_CAPTION | WS_SYSMENU
+CAPTION "Reference Num of Memory"
+FONT 9, "Microsoft Sans Serif", 400, 0, 0x0
+BEGIN
+    DEFPUSHBUTTON   "OK",IDOK,39,104,41,14
+    RTEXT           "Main Image Data",IDC_STATIC,7,7,59,16,SS_CENTERIMAGE
+    CTEXT           "0",IDC_REFNO_DATA,70,7,47,16,SS_CENTERIMAGE | SS_SUNKEN
+    RTEXT           "Main Volume Data",IDC_STATIC,7,26,59,16,SS_CENTERIMAGE
+    CTEXT           "0",IDC_REFNO_VOL,70,25,47,16,SS_CENTERIMAGE | SS_SUNKEN
+    RTEXT           "Multi Slices Data",IDC_STATIC,7,61,59,16,SS_CENTERIMAGE
+    CTEXT           "0",IDC_REFNO_MCT,70,61,47,16,SS_CENTERIMAGE | SS_SUNKEN
+    RTEXT           "Thumbnail Data",IDC_STATIC,7,43,59,16,SS_CENTERIMAGE
+    CTEXT           "0",IDC_REFNO_TBN,70,43,47,16,SS_CENTERIMAGE | SS_SUNKEN
+END
+
+IDD_SETDLG DIALOGEX 0, 0, 119, 135
+STYLE DS_SETFONT | DS_MODALFRAME | WS_POPUP | WS_CAPTION | WS_SYSMENU
+CAPTION "Setting Options"
+FONT 9, "Microsoft Sans Serif", 400, 0, 0x0
+BEGIN
+    DEFPUSHBUTTON   "OK",IDOK,7,114,35,14
+    PUSHBUTTON      "Cancel",IDCANCEL,77,114,35,14
+    CONTROL         "Colorize of Volume (RGB)",IDC_SET_VCOLOR,"Button",BS_AUTOCHECKBOX | WS_TABSTOP,7,7,94,18
+    CONTROL         "Reverse Z (for 3D CT)",IDC_SET_RVRSZ,"Button",BS_AUTOCHECKBOX | WS_TABSTOP,7,25,105,16
+    CONTROL         "Separate Data Transfer (3D)",IDC_SET_DIVDRAW,"Button",BS_AUTOCHECKBOX | WS_TABSTOP,7,41,105,18
+    CONTROL         "Force Correct Contrast (2D)",IDC_SET_ATCNTRST,"Button",BS_AUTOCHECKBOX | WS_TABSTOP,7,61,94,10
+    EDITTEXT        IDC_SET_FBASE,65,85,47,13,ES_AUTOHSCROLL
+    LTEXT           "Temp Base Value",IDC_STATIC,7,87,58,10
+END
+
+IDD_INFOBOX DIALOGEX 0, 0, 259, 164
+STYLE DS_SETFONT | DS_MODALFRAME | WS_POPUP | WS_CAPTION | WS_SYSMENU
+CAPTION "Information of Main Image Data"
+FONT 9, "Microsoft Sans Serif", 400, 0, 0x0
+BEGIN
+    DEFPUSHBUTTON   "OK",IDOK,109,145,41,14
+    RTEXT           "Format",IDC_STATIC,5,8,33,16,SS_CENTERIMAGE
+    RTEXT           "X Size",IDC_STATIC,5,26,33,16,SS_CENTERIMAGE
+    RTEXT           "Y Size",IDC_STATIC,5,44,33,16,SS_CENTERIMAGE
+    RTEXT           "Z Size",IDC_STATIC,5,62,33,16,SS_CENTERIMAGE
+    RTEXT           "Depth (bit)",IDC_STATIC,5,80,33,16,SS_CENTERIMAGE
+    RTEXT           "Min Value",IDC_STATIC,5,98,33,16,SS_CENTERIMAGE
+    RTEXT           "Max Value",IDC_STATIC,5,116,33,16,SS_CENTERIMAGE
+    CTEXT           "",IDC_INFO_FORMAT,45,8,55,16,SS_CENTERIMAGE | SS_SUNKEN
+    CTEXT           "0",IDC_INFO_XSIZE,45,26,55,16,SS_CENTERIMAGE | SS_SUNKEN
+    CTEXT           "0",IDC_INFO_YSIZE,45,44,55,16,SS_CENTERIMAGE | SS_SUNKEN
+    CTEXT           "0",IDC_INFO_ZSIZE,45,62,55,16,SS_CENTERIMAGE | SS_SUNKEN
+    CTEXT           "0",IDC_INFO_DEPTH,45,80,55,16,SS_CENTERIMAGE | SS_SUNKEN
+    CTEXT           "0",IDC_INFO_MIN,45,98,55,16,SS_CENTERIMAGE | SS_SUNKEN
+    CTEXT           "0",IDC_INFO_MAX,45,116,55,16,SS_CENTERIMAGE | SS_SUNKEN
+    RTEXT           "Swerve of Z",IDC_STATIC,118,8,50,16,SS_CENTERIMAGE
+    RTEXT           "Base Value",IDC_STATIC,118,26,50,16,SS_CENTERIMAGE
+    RTEXT           "Temp Base Value",IDC_STATIC,111,44,57,16,SS_CENTERIMAGE
+    CTEXT           "0",IDC_INFO_RZXY,175,8,55,16,SS_CENTERIMAGE | SS_SUNKEN
+    CTEXT           "0",IDC_INFO_BASE,175,26,55,16,SS_CENTERIMAGE | SS_SUNKEN
+    CTEXT           "0",IDC_INFO_TEMPBASE,175,44,55,16,SS_CENTERIMAGE | SS_SUNKEN
+    RTEXT           "Boundary",IDC_STATIC,104,65,32,16,SS_CENTERIMAGE
+    RTEXT           "X min",IDC_STATIC,106,80,18,16,SS_CENTERIMAGE
+    RTEXT           "X max",IDC_STATIC,177,80,23,16,SS_CENTERIMAGE
+    RTEXT           "Y min",IDC_STATIC,106,98,18,16,SS_CENTERIMAGE
+    RTEXT           "Y max",IDC_STATIC,179,98,21,16,SS_CENTERIMAGE
+    RTEXT           "Z min",IDC_STATIC,106,116,18,16,SS_CENTERIMAGE
+    RTEXT           "Z max",IDC_STATIC,179,116,21,16,SS_CENTERIMAGE
+    CTEXT           "0",IDC_INFO_XMIN,126,80,48,16,SS_CENTERIMAGE | SS_SUNKEN
+    CTEXT           "0",IDC_INFO_XMAX,202,80,48,16,SS_CENTERIMAGE | SS_SUNKEN
+    CTEXT           "0",IDC_INFO_YMIN,126,98,48,16,SS_CENTERIMAGE | SS_SUNKEN
+    CTEXT           "0",IDC_INFO_YMAX,202,98,48,16,SS_CENTERIMAGE | SS_SUNKEN
+    CTEXT           "0",IDC_INFO_ZMIN,126,116,48,16,SS_CENTERIMAGE | SS_SUNKEN
+    CTEXT           "0",IDC_INFO_ZMAX,202,116,48,16,SS_CENTERIMAGE | SS_SUNKEN
+END
+
+
+/////////////////////////////////////////////////////////////////////////////
+//
+// DESIGNINFO
+//
+
+#ifdef APSTUDIO_INVOKED
+GUIDELINES DESIGNINFO
+BEGIN
+    IDD_REFNODLG, DIALOG
+    BEGIN
+        LEFTMARGIN, 7
+        RIGHTMARGIN, 117
+        TOPMARGIN, 7
+        BOTTOMMARGIN, 118
+    END
+
+    IDD_SETDLG, DIALOG
+    BEGIN
+        LEFTMARGIN, 7
+        RIGHTMARGIN, 112
+        TOPMARGIN, 7
+        BOTTOMMARGIN, 128
+    END
+
+    IDD_INFOBOX, DIALOG
+    BEGIN
+        LEFTMARGIN, 5
+        RIGHTMARGIN, 251
+        TOPMARGIN, 8
+        BOTTOMMARGIN, 159
+    END
+END
+#endif    // APSTUDIO_INVOKED
+
+#endif    // 英語 resources
+/////////////////////////////////////////////////////////////////////////////
+
+
+
+#ifndef APSTUDIO_INVOKED
+/////////////////////////////////////////////////////////////////////////////
+//
+// Generated from the TEXTINCLUDE 3 resource.
+//
+
+
+/////////////////////////////////////////////////////////////////////////////
+#endif    // not APSTUDIO_INVOKED
+

@@ -1,0 +1,34 @@
+*Mandel 
+
+-1.45   -1.35
+-0.05   0.05
+
+
+*d3dx9_43.dll が見つからない
+http://jp.dll-download-system.com/docman/d-dlls-not-system-/d3dx9-43.dll/details.html
+
+
+*MagaDebug32(magdb142) 
+http://s-gikan2.maizuru-ct.ac.jp/old/magadbg.html
+http://www.vector.co.jp/soft/win95/prog/se065884.html
+
+
+*libjpeg http://www.ijg.org/
+copy jconfig.vc jconfig.h 
+nmake -f makefile.vc
+
+
+プロジェクトのプロパティ
+Debug
+Release
+   C/C++
+      全般
+　　　　　追加のインクルード ディレクトリ
+      プリプロセッサ
+　　　　　プリプロセッサの定義　　..._EXPORTS
+   リンカ
+      全般
+　　　　　追加のライブラリ ディレクトリ
+      入力
+　　　　　追加の依存ファイル      .....lib
+          モジュール定義ファイル　.....def

@@ -1,0 +1,782 @@
+// Microsoft Visual C++ generated resource script.
+//
+#include "resource.h"
+
+#define APSTUDIO_READONLY_SYMBOLS
+/////////////////////////////////////////////////////////////////////////////
+//
+// Generated from the TEXTINCLUDE 2 resource.
+//
+#include "afxres.h"
+
+/////////////////////////////////////////////////////////////////////////////
+#undef APSTUDIO_READONLY_SYMBOLS
+
+/////////////////////////////////////////////////////////////////////////////
+// 日本語 (日本) resources
+
+#if !defined(AFX_RESOURCE_DLL) || defined(AFX_TARG_JPN)
+LANGUAGE LANG_JAPANESE, SUBLANG_DEFAULT
+//#pragma code_page(932)
+#pragma code_page(65001)
+
+#ifdef APSTUDIO_INVOKED
+/////////////////////////////////////////////////////////////////////////////
+//
+// TEXTINCLUDE
+//
+
+1 TEXTINCLUDE 
+BEGIN
+    "resource.h\0"
+END
+
+2 TEXTINCLUDE 
+BEGIN
+    "#include ""afxres.h""\r\n"
+    "\0"
+END
+
+3 TEXTINCLUDE 
+BEGIN
+    "#define _AFX_NO_SPLITTER_RESOURCES\r\n"
+    "#define _AFX_NO_OLE_RESOURCES\r\n"
+    "#define _AFX_NO_TRACKER_RESOURCES\r\n"
+    "#define _AFX_NO_PROPERTY_RESOURCES\r\n"
+    "\r\n"
+    "#if !defined(AFX_RESOURCE_DLL) || defined(AFX_TARG_JPN)\r\n"
+    "#ifdef _WIN32\r\n"
+    "LANGUAGE 17, 1\r\n"
+    "#pragma code_page(65001)\r\n"
+    "#endif //_WIN32\r\n"
+    "#include ""res\\CTVIEW.rc2""  // Microsoft Visual C++ 以外のツールで編集されたリソース\r\n"
+    "#include ""l.jpn\\afxres.rc""          // 標準のコンポーネント\r\n"
+    "#include ""l.jpn\\afxprint.rc""        // 印刷/印刷プレビュー リソース\r\n"
+    "#endif\r\n"
+    "\0"
+END
+
+#endif    // APSTUDIO_INVOKED
+
+
+/////////////////////////////////////////////////////////////////////////////
+//
+// Icon
+//
+
+// Icon with lowest ID value placed first to ensure application icon
+// remains consistent on all systems.
+IDR_MAINFRAME           ICON                    "res\\CTView.ico"
+
+/////////////////////////////////////////////////////////////////////////////
+//
+// Bitmap
+//
+
+IDR_MAINFRAME           BITMAP                  "res\\Toolbar.bmp"
+
+/////////////////////////////////////////////////////////////////////////////
+//
+// Toolbar
+//
+
+IDR_MAINFRAME TOOLBAR 16, 15
+BEGIN
+    BUTTON      ID_FILE_NEW
+    BUTTON      ID_FILE_OPEN
+    BUTTON      ID_FILE_SAVE
+    SEPARATOR
+    BUTTON      ID_EDIT_CUT
+    BUTTON      ID_EDIT_COPY
+    BUTTON      ID_EDIT_PASTE
+    SEPARATOR
+    BUTTON      ID_FILE_PRINT
+    SEPARATOR
+    BUTTON      ID_APP_ABOUT
+END
+
+
+/////////////////////////////////////////////////////////////////////////////
+//
+// Menu
+//
+
+IDR_MAINFRAME MENU
+BEGIN
+    POPUP "ファイル(&F)"
+    BEGIN
+        MENUITEM "新規ファイル読み込み",                  ID_FILE_OPEN
+        MENUITEM SEPARATOR
+        MENUITEM "画像データの保存",                    ID_FILE_SAVEFL
+        MENUITEM "ボリュームデータの保存",                 ID_FILE_SAVEVOL
+        MENUITEM SEPARATOR
+        MENUITEM " ",                           ID_DUMMY
+        MENUITEM SEPARATOR
+        MENUITEM "アプリケーションの終了(&X)",             ID_APP_EXIT
+    END
+    POPUP "表示"
+    BEGIN
+        MENUITEM "画像データの表示",                    ID_VIEW_MCT
+        MENUITEM SEPARATOR
+        MENUITEM "マルチスライス表示（Ｘ方向）",              ID_VIEW_MCTX
+        MENUITEM "マルチスライス表示（−Ｙ方向）",             ID_VIEW_MCTY
+        MENUITEM SEPARATOR
+        MENUITEM "サムネイルの表示",                    ID_VIEW_TN
+        MENUITEM "ボリュームデータの表示",                 ID_VIEW_VOL
+    END
+    POPUP "プラグイン"
+    BEGIN
+        MENUITEM "プラグイン無し",                     ID_DLL_DUMMY
+    END
+    POPUP "ツール"
+    BEGIN
+        MENUITEM "プラグインの開放",                    ID_TOOL_FREEDLL
+        MENUITEM SEPARATOR
+        MENUITEM "プラグインの読み直し",                  ID_TOOL_READDLL
+        MENUITEM SEPARATOR
+        MENUITEM "ファイルヘッダ設定",                   ID_TOOL_HEADER
+        MENUITEM SEPARATOR
+        MENUITEM "動作設定",                        ID_TOOL_SET
+    END
+    POPUP "メモリ"
+    BEGIN
+        MENUITEM "画像データの削除",                    ID_DEL_MDATA
+        MENUITEM "ボリュームデータの削除",                 ID_DEL_VDATA
+        MENUITEM SEPARATOR
+        MENUITEM "メモリ参照数の確認",                   ID_TOOL_SHWREFN
+    END
+    POPUP "ヘルプ(&H)"
+    BEGIN
+        MENUITEM "画像データ情報",                     ID_INFO_GRAPH
+        MENUITEM "CTView のバージョン情報(&A)...",      ID_APP_ABOUT
+    END
+END
+
+
+/////////////////////////////////////////////////////////////////////////////
+//
+// Accelerator
+//
+
+IDR_MAINFRAME ACCELERATORS
+BEGIN
+    "N",            ID_FILE_NEW,            VIRTKEY, CONTROL
+    "O",            ID_FILE_OPEN,           VIRTKEY, CONTROL
+    "S",            ID_FILE_SAVE,           VIRTKEY, CONTROL
+    "P",            ID_FILE_PRINT,          VIRTKEY, CONTROL
+    "Z",            ID_EDIT_UNDO,           VIRTKEY, CONTROL
+    "X",            ID_EDIT_CUT,            VIRTKEY, CONTROL
+    "C",            ID_EDIT_COPY,           VIRTKEY, CONTROL
+    "V",            ID_EDIT_PASTE,          VIRTKEY, CONTROL
+    VK_BACK,        ID_EDIT_UNDO,           VIRTKEY, ALT
+    VK_DELETE,      ID_EDIT_CUT,            VIRTKEY, SHIFT
+    VK_INSERT,      ID_EDIT_COPY,           VIRTKEY, CONTROL
+    VK_INSERT,      ID_EDIT_PASTE,          VIRTKEY, SHIFT
+    VK_F6,          ID_NEXT_PANE,           VIRTKEY 
+    VK_F6,          ID_PREV_PANE,           VIRTKEY, SHIFT
+END
+
+
+/////////////////////////////////////////////////////////////////////////////
+//
+// Dialog
+//
+
+IDD_ABOUTBOX DIALOGEX 0, 0, 299, 73
+STYLE DS_SETFONT | DS_MODALFRAME | WS_POPUP | WS_CAPTION | WS_SYSMENU
+CAPTION "CTView のバージョン情報"
+FONT 9, "ＭＳ Ｐゴシック", 400, 0, 0x80
+BEGIN
+    ICON            IDR_MAINFRAME,IDC_STATIC,7,7,20,20
+    LTEXT           "CTView v2.2.1  ('12 10/3)",IDC_STATIC,33,7,259,8,SS_NOPREFIX
+    LTEXT           "Copyright (C) Since 2004  by Fumi.Iseki && A.Izawa",IDC_STATIC,33,17,259,8
+    DEFPUSHBUTTON   "OK",IDOK,242,52,50,14,WS_GROUP
+    LTEXT           "This software is based in part on the work of the Independent JPEG Group",IDC_STATIC,15,40,220,11
+END
+
+
+/////////////////////////////////////////////////////////////////////////////
+//
+// Version
+//
+
+VS_VERSION_INFO VERSIONINFO
+ FILEVERSION 1,0,0,0
+ PRODUCTVERSION 1,0,0,1
+ FILEFLAGSMASK 0x3fL
+#ifdef _DEBUG
+ FILEFLAGS 0x1L
+#else
+ FILEFLAGS 0x0L
+#endif
+ FILEOS 0x4L
+ FILETYPE 0x1L
+ FILESUBTYPE 0x0L
+BEGIN
+    BLOCK "StringFileInfo"
+    BEGIN
+        BLOCK "041104b0"
+        BEGIN
+            VALUE "CompanyName", "TUIS"
+            VALUE "FileDescription", "CTView MFC アプリケーション"
+            VALUE "FileVersion", "2.0.0"
+            VALUE "InternalName", "CTView"
+            VALUE "LegalCopyright", "Copyright (C) 2004 by Fumi.Iseki and A.Izawa"
+            VALUE "OriginalFilename", "CTVIEW.EXE"
+            VALUE "ProductName", "CTView アプリケーション"
+            VALUE "ProductVersion", "2.0.0"
+        END
+    END
+    BLOCK "VarFileInfo"
+    BEGIN
+        VALUE "Translation", 0x411, 1200
+    END
+END
+
+
+/////////////////////////////////////////////////////////////////////////////
+//
+// DESIGNINFO
+//
+
+#ifdef APSTUDIO_INVOKED
+GUIDELINES DESIGNINFO
+BEGIN
+    IDD_ABOUTBOX, DIALOG
+    BEGIN
+        LEFTMARGIN, 7
+        RIGHTMARGIN, 292
+        TOPMARGIN, 7
+        BOTTOMMARGIN, 66
+    END
+END
+#endif    // APSTUDIO_INVOKED
+
+
+/////////////////////////////////////////////////////////////////////////////
+//
+// String Table
+//
+
+STRINGTABLE
+BEGIN
+    IDR_MAINFRAME           "CTView"
+    IDR_MFRAME_MCT          "\nCTVIEW\nCTVIEW\n\n\nCTVIEW.Document\nCTVIEW Document"
+END
+
+STRINGTABLE
+BEGIN
+    AFX_IDS_APP_TITLE       "CTView"
+    AFX_IDS_IDLEMESSAGE     "レディ"
+END
+
+STRINGTABLE
+BEGIN
+    ID_INDICATOR_EXT        "EXT"
+    ID_INDICATOR_CAPS       "CAP"
+    ID_INDICATOR_NUM        "NUM"
+    ID_INDICATOR_SCRL       "SCRL"
+    ID_INDICATOR_OVR        "上書"
+    ID_INDICATOR_REC        "記録"
+    ID_INDICATOR_KANA       "カナ"
+END
+
+STRINGTABLE
+BEGIN
+    ID_FILE_NEW             "新規にファイルを作成\n新規ファイル"
+    ID_FILE_OPEN            "既存のファイルを開く\n開く"
+    ID_FILE_CLOSE           "作業中のファイルを閉じる\n閉じる"
+    ID_FILE_SAVE            "作業中のファイルを上書きして保存\n保存"
+    ID_FILE_SAVE_AS         "作業中のファイルを新しい名前で保存\n名前をつけて保存"
+    ID_FILE_PAGE_SETUP      "印刷オプションの変更\nページ レイアウトの設定"
+    ID_FILE_PRINT_SETUP     "プリンタ/印刷オプションの変更\n印刷設定"
+    ID_FILE_PRINT           "作業中のファイルを印刷\n印刷"
+    ID_FILE_PRINT_PREVIEW   "印刷イメージを表示\n印刷プレビュー"
+END
+
+STRINGTABLE
+BEGIN
+    ID_APP_ABOUT            "プログラムの情報、バージョンそして著作権を表示\nバージョン情報"
+    ID_APP_EXIT             "アプリケーションを終了し、ファイルの保存を指示\n終了"
+END
+
+STRINGTABLE
+BEGIN
+    ID_FILE_MRU_FILE1       "指定のファイルを開く"
+    ID_FILE_MRU_FILE2       "指定のファイルを開く"
+    ID_FILE_MRU_FILE3       "指定のファイルを開く"
+    ID_FILE_MRU_FILE4       "指定のファイルを開く"
+    ID_FILE_MRU_FILE5       "指定のファイルを開く"
+    ID_FILE_MRU_FILE6       "指定のファイルを開く"
+    ID_FILE_MRU_FILE7       "指定のファイルを開く"
+    ID_FILE_MRU_FILE8       "指定のファイルを開く"
+    ID_FILE_MRU_FILE9       "指定のファイルを開く"
+    ID_FILE_MRU_FILE10      "指定のファイルを開く"
+    ID_FILE_MRU_FILE11      "指定のファイルを開く"
+    ID_FILE_MRU_FILE12      "指定のファイルを開く"
+    ID_FILE_MRU_FILE13      "指定のファイルを開く"
+    ID_FILE_MRU_FILE14      "指定のファイルを開く"
+    ID_FILE_MRU_FILE15      "指定のファイルを開く"
+    ID_FILE_MRU_FILE16      "指定のファイルを開く"
+END
+
+STRINGTABLE
+BEGIN
+    ID_NEXT_PANE            "次のウィンドウに切り替える\n次のペイン"
+    ID_PREV_PANE            "前のウィンドウに切り替える\n前のペイン"
+END
+
+STRINGTABLE
+BEGIN
+    ID_WINDOW_NEW           "作業中のウィンドウを複写して表示\n新規ウィンドウ"
+    ID_WINDOW_ARRANGE       "ウィンドウの下部にアイコンを整列\nアイコンの整列"
+    ID_WINDOW_CASCADE       "ウィンドウを重ねて表示\n重ねて表示"
+    ID_WINDOW_TILE_HORZ     "ウィンドウを並べて表示\n並べて表示"
+    ID_WINDOW_TILE_VERT     "ウィンドウを並べて表示\n並べて表示"
+    ID_WINDOW_SPLIT         "作業中のウィンドウを分割\n分割"
+END
+
+STRINGTABLE
+BEGIN
+    ID_EDIT_CLEAR           "選択範囲を消去\n消去"
+    ID_EDIT_CLEAR_ALL       "すべて消去\nすべて消去"
+    ID_EDIT_COPY            "選択範囲をコピーしてクリップボードに保存\nコピー"
+    ID_EDIT_CUT             "選択範囲を切り取ってクリップボードに保存\n切り取り"
+    ID_EDIT_FIND            "指定した文字列の検索\n検索"
+    ID_EDIT_PASTE           "クリップボードの内容を貼り付け\n貼り付け"
+    ID_EDIT_REPEAT          "直前に行った動作を繰り返す\n繰り返し"
+    ID_EDIT_REPLACE         "指定した文字列を他の文字列で置換\n置換"
+    ID_EDIT_SELECT_ALL      "ファイル内のすべてを選択\nすべて選択"
+    ID_EDIT_UNDO            "直前に行った動作を元に戻す\n元に戻す"
+    ID_EDIT_REDO            "直前に行った動作を繰り返す\n繰り返す"
+END
+
+STRINGTABLE
+BEGIN
+    ID_VIEW_TOOLBAR         "ツール バーの 表示/非表示\nツール バーの表示切り替え"
+    ID_VIEW_STATUS_BAR      "ステータス バーの 表示/非表示\nステータス バーの表示切り替え"
+END
+
+STRINGTABLE
+BEGIN
+    ID_INFO_GRAPH           "読み込んだ画像の情報を表示"
+END
+
+STRINGTABLE
+BEGIN
+    AFX_IDS_SCSIZE          "ウィンドウのサイズを変更"
+    AFX_IDS_SCMOVE          "ウィンドウの位置を変更"
+    AFX_IDS_SCMINIMIZE      "ウィンドウを最小化する"
+    AFX_IDS_SCMAXIMIZE      "ウィンドウを最大化する"
+    AFX_IDS_SCNEXTWINDOW    "次のウィンドウに切り替える"
+    AFX_IDS_SCPREVWINDOW    "前のウィンドウに切り替える"
+    AFX_IDS_SCCLOSE         "作業中のウィンドウを閉じ、変更したファイルの保存を指示"
+END
+
+STRINGTABLE
+BEGIN
+    AFX_IDS_SCRESTORE       "ウィンドウを通常のサイズに戻す"
+    AFX_IDS_SCTASKLIST      "アプリケーションの切り替え"
+    AFX_IDS_MDICHILD        "指定のウィンドウを表示"
+END
+
+STRINGTABLE
+BEGIN
+    AFX_IDS_PREVIEW_CLOSE   "印刷プレビュー モードの終わり\nプレビューのキャンセル"
+END
+
+STRINGTABLE
+BEGIN
+    IDS_STR_VW_X_DIR        "[X方向]"
+    IDS_STR_VW_RVY_DIR      "[-Y方向]"
+    IDS_STR_FAIL_PLG_CRT_FRM "表示用フレームの生成に失敗しました"
+    IDS_STR_FAIL_PLG_NODATA "処理用プラグインはデータを生成していません"
+    IDS_STR_FAIL_PLG_PROC   "処理失敗（または手動による中止）"
+    IDS_STR_OPN_CTFL        "CT画像ファイルを開く"
+    IDS_STR_OPN_VOLFL       "ボリュームデータファイルを開く"
+    IDS_STR_OPN_RGNFL       "領域データファイルを開く"
+    IDS_STR_ERR_IMG_FRMT_3D "フォーマットエラー．%s を 3Dモードで書き込むことはできません"
+    IDS_STR_ERR_IMG_FRMT_COL "フォーマットエラー．%s のカラーチャンネルの数が合いません"
+    IDS_STR_ERR_WRT_CMNFL   "書き込みエラー．writeCmnHeadFile() [Gio.cpp] を見てください\n\nErrorNo = %d "
+    IDS_STR_ERR_OPN_WRT     "書き込みファイルのオープンエラー．%s "
+    IDS_STR_VW_VOLDATA      "ボリュームデータ表示"
+    IDS_STR_ERR_NO_DISP_VOL "表示できるボリュームデータはありません"
+END
+
+STRINGTABLE
+BEGIN
+    IDS_STR_VW_TMP_VIOLDATA "一時的ボリュームデータ表示"
+    IDS_STR_VW_THUMB_IMG    "サムネイル表示"
+    IDS_STR_SPCFY_IMG_TMP_SVFL "画像データ保存用ファイルの仮指定"
+    IDS_STR_SPCFY_VOL_SVFL  "ボリュームデータ保存用ファイルの指定"
+    IDS_STR_SPCFY_RGN_SVFL  "領域データ保存用ファイルを指定する"
+    IDS_STR_ERR_NO_SAVE_VOL "保存できるボリュームデータはありません"
+    IDS_STR_ERR_NO_SAVE_IMG "保存できる画像データはありません"
+    IDS_STR_ERR_NO_SAVE_RGN "保存できる領域データはありません"
+    IDS_STR_ERR_NO_IMG_THUMB "サムネイルを作成するための画像データがありません"
+    IDS_STR_FAIL_COPY_IMGDATA "画像データのコピーに失敗しました"
+    IDS_STR_PL_CLOSE_IMG    "メインの画像データを使用中のウィンドウがあります\nメインデータのウィンドウを閉じてください"
+    IDS_STR_PL_CLOSE_VOL    "ボリュームデータを使用中のウィンドウがあります\nボリュームデータのウィンドウを閉じてください"
+END
+
+STRINGTABLE
+BEGIN
+    IDS_STR_DO_DEL_IMG      "メインの画像データを削除しますか？"
+    IDS_STR_DO_DEL_VOL      "ボリュームデータを削除しますか？"
+    IDS_STR_DO_DEL_RGN      "領域データを削除しますか？"
+    IDS_STR_CRT_MAIN_IMGDATA "メインの画像データを破棄して，この画像をメインのデータとします"
+    IDS_STR_NO_PLUGINS      "プラグイン無し"
+END
+
+#endif    // 日本語 (日本) resources
+/////////////////////////////////////////////////////////////////////////////
+
+
+/////////////////////////////////////////////////////////////////////////////
+// 英語 resources
+
+#if !defined(AFX_RESOURCE_DLL) || defined(AFX_TARG_ENU)
+LANGUAGE LANG_ENGLISH, SUBLANG_NEUTRAL
+#pragma code_page(1252)
+
+/////////////////////////////////////////////////////////////////////////////
+//
+// Menu
+//
+
+IDR_MAINFRAME MENU
+BEGIN
+    POPUP "File (&F)"
+    BEGIN
+        MENUITEM "Open Image File",             ID_FILE_OPEN
+        MENUITEM SEPARATOR
+        MENUITEM "Save Main Image Data",        ID_FILE_SAVEFL
+        MENUITEM "Save Main Volume Data",       ID_FILE_SAVEVOL
+        MENUITEM SEPARATOR
+        MENUITEM " ",                           ID_DUMMY
+        MENUITEM SEPARATOR
+        MENUITEM "Exit (&X)",                   ID_APP_EXIT
+    END
+    POPUP "View"
+    BEGIN
+        MENUITEM "Display Main Image",          ID_VIEW_MCT
+        MENUITEM SEPARATOR
+        MENUITEM "Display Multi Slices (X)",    ID_VIEW_MCTX
+        MENUITEM "Display Multi Slices (-Y)",   ID_VIEW_MCTY
+        MENUITEM SEPARATOR
+        MENUITEM "Display Thumbnail",           ID_VIEW_TN
+        MENUITEM "Display Main Volume Data",    ID_VIEW_VOL
+    END
+    POPUP "Plugins"
+    BEGIN
+        MENUITEM "No Plugins",                  ID_DLL_DUMMY
+    END
+    POPUP "Tools"
+    BEGIN
+        MENUITEM "Release Pluginss",            ID_TOOL_FREEDLL
+        MENUITEM SEPARATOR
+        MENUITEM "Reload Plugins",              ID_TOOL_READDLL
+        MENUITEM SEPARATOR
+        MENUITEM "Setting File Header",         ID_TOOL_HEADER
+        MENUITEM SEPARATOR
+        MENUITEM "Setting Options",             ID_TOOL_SET
+    END
+    POPUP "Memory"
+    BEGIN
+        MENUITEM "Delete Main Image Data",      ID_DEL_MDATA
+        MENUITEM "Delete Main Volume Data",     ID_DEL_VDATA
+        MENUITEM SEPARATOR
+        MENUITEM "Memory References",           ID_TOOL_SHWREFN
+    END
+    POPUP "Help (&H)"
+    BEGIN
+        MENUITEM "Info. of Main Image Data",    ID_INFO_GRAPH
+        MENUITEM "Info. of CTView (&A)...",     ID_APP_ABOUT
+    END
+END
+
+
+/////////////////////////////////////////////////////////////////////////////
+//
+// Dialog
+//
+
+IDD_ABOUTBOX DIALOGEX 0, 0, 299, 73
+STYLE DS_SETFONT | DS_MODALFRAME | WS_POPUP | WS_CAPTION | WS_SYSMENU
+CAPTION "Version Information of CTView"
+FONT 9, "Microsoft Sans Serif", 400, 0, 0x0
+BEGIN
+    ICON            IDR_MAINFRAME,IDC_STATIC,7,7,20,20
+    LTEXT           "CTView v2.2.1  (3 Oct. 2012)",IDC_STATIC,33,7,259,8,SS_NOPREFIX
+    LTEXT           "Copyright (C) Since 2004  by Fumi.Iseki && A.Izawa",IDC_STATIC,33,17,259,8
+    DEFPUSHBUTTON   "OK",IDOK,242,52,50,14,WS_GROUP
+    LTEXT           "This software is based in part on the work of the Independent JPEG Group",IDC_STATIC,14,40,246,11
+    LTEXT           "MagaDebug32 is used at Debug Mode",IDC_STATIC,15,51,160,14
+END
+
+
+/////////////////////////////////////////////////////////////////////////////
+//
+// Version
+//
+
+VS_VERSION_INFO VERSIONINFO
+ FILEVERSION 1,0,0,0
+ PRODUCTVERSION 1,0,0,1
+ FILEFLAGSMASK 0x3fL
+#ifdef _DEBUG
+ FILEFLAGS 0x1L
+#else
+ FILEFLAGS 0x0L
+#endif
+ FILEOS 0x4L
+ FILETYPE 0x1L
+ FILESUBTYPE 0x0L
+BEGIN
+    BLOCK "StringFileInfo"
+    BEGIN
+        BLOCK "040904b0"
+        BEGIN
+            VALUE "CompanyName", "TUIS"
+            VALUE "FileDescription", "CTView MFC Application"
+            VALUE "FileVersion", "2.0.0"
+            VALUE "InternalName", "CTView"
+            VALUE "LegalCopyright", "Copyright (C) 2004 by Fumi.Iseki and A.Izawa"
+            VALUE "OriginalFilename", "CTVIEW.EXE"
+            VALUE "ProductName", "CTView Application"
+            VALUE "ProductVersion", "2.0.0"
+        END
+    END
+    BLOCK "VarFileInfo"
+    BEGIN
+        VALUE "Translation", 0x409, 1200
+    END
+END
+
+
+/////////////////////////////////////////////////////////////////////////////
+//
+// DESIGNINFO
+//
+
+#ifdef APSTUDIO_INVOKED
+GUIDELINES DESIGNINFO
+BEGIN
+    IDD_ABOUTBOX, DIALOG
+    BEGIN
+        LEFTMARGIN, 7
+        RIGHTMARGIN, 292
+        TOPMARGIN, 7
+        BOTTOMMARGIN, 66
+    END
+END
+#endif    // APSTUDIO_INVOKED
+
+
+/////////////////////////////////////////////////////////////////////////////
+//
+// String Table
+//
+
+STRINGTABLE
+BEGIN
+    IDR_MAINFRAME           "CTView"
+    IDR_MFRAME_MCT          "\nCTVIEW\nCTVIEW\n\n\nCTVIEW.Document\nCTVIEW Document"
+END
+
+STRINGTABLE
+BEGIN
+    AFX_IDS_APP_TITLE       "CTView"
+    AFX_IDS_IDLEMESSAGE     "REady"
+END
+
+STRINGTABLE
+BEGIN
+    ID_INDICATOR_EXT        "EXT"
+    ID_INDICATOR_CAPS       "CAP"
+    ID_INDICATOR_NUM        "NUM"
+    ID_INDICATOR_SCRL       "SCRL"
+    ID_INDICATOR_OVR        "Over Write"
+    ID_INDICATOR_REC        "Record"
+    ID_INDICATOR_KANA       "Kana"
+END
+
+STRINGTABLE
+BEGIN
+    ID_FILE_NEW             "Create New File\nNew File"
+    ID_FILE_OPEN            "Open the Exist File\nOpen"
+    ID_FILE_CLOSE           "Close the Working File\nClose"
+    ID_FILE_SAVE            "Save the Working File\nSave"
+    ID_FILE_SAVE_AS         "Save as the New File\nSave As"
+    ID_FILE_PAGE_SETUP      "Setup Print Opstion\nPage Setup"
+    ID_FILE_PRINT_SETUP     "Setup Printer Opstion\nPrint Setup"
+    ID_FILE_PRINT           "Print the Working File\nPrint"
+    ID_FILE_PRINT_PREVIEW   "Display Print Image\nPrint Preview"
+END
+
+STRINGTABLE
+BEGIN
+    ID_APP_ABOUT            "Display Info of this Application\nAbout"
+    ID_APP_EXIT             "Exit and Save File\nExit"
+END
+
+STRINGTABLE
+BEGIN
+    ID_FILE_MRU_FILE1       "Open File"
+    ID_FILE_MRU_FILE2       "Open File"
+    ID_FILE_MRU_FILE3       "Open File"
+    ID_FILE_MRU_FILE4       "Open File"
+    ID_FILE_MRU_FILE5       "Open File"
+    ID_FILE_MRU_FILE6       "Open File"
+    ID_FILE_MRU_FILE7       "Open File"
+    ID_FILE_MRU_FILE8       "Open File"
+    ID_FILE_MRU_FILE9       "Open File"
+    ID_FILE_MRU_FILE10      "Open File"
+    ID_FILE_MRU_FILE11      "Open File"
+    ID_FILE_MRU_FILE12      "Open File"
+    ID_FILE_MRU_FILE13      "Open File"
+    ID_FILE_MRU_FILE14      "Open File"
+    ID_FILE_MRU_FILE15      "Open File"
+    ID_FILE_MRU_FILE16      "Open File"
+END
+
+STRINGTABLE
+BEGIN
+    ID_NEXT_PANE            "Change to the Next Pane\nNext Pane"
+    ID_PREV_PANE            "Change to the Previous Pane\nPrevious Pane"
+END
+
+STRINGTABLE
+BEGIN
+    ID_WINDOW_NEW           "Copy and Display the Window\nNew Window"
+    ID_WINDOW_ARRANGE       "Display Icons at Under of Window\nArrange Icon"
+    ID_WINDOW_CASCADE       "Display the Windows by Overlap\nCascade"
+    ID_WINDOW_TILE_HORZ     "Display the Windows by Horizontal\nHorizontal"
+    ID_WINDOW_TILE_VERT     "Display the Windows by Vertical\nVertical"
+    ID_WINDOW_SPLIT         "Split the Window\nSplit"
+END
+
+STRINGTABLE
+BEGIN
+    ID_EDIT_CLEAR           "Clear the Selected Area\nClear"
+    ID_EDIT_CLEAR_ALL       "Clear All\nClear All"
+    ID_EDIT_COPY            "Copy the Selected Area and Save to Cripboard\nCopy"
+    ID_EDIT_CUT             "Cut the Selected Area and Save to Cripboard\nCut"
+    ID_EDIT_FIND            "Find the String\nFind"
+    ID_EDIT_PASTE           "Paste from Cripboard\nPaste"
+    ID_EDIT_REPEAT          "Repeat the Previous Action\nRepeat"
+    ID_EDIT_REPLACE         "REplace the String\nReplace"
+    ID_EDIT_SELECT_ALL      "Select the All Area in File\nSelect All"
+    ID_EDIT_UNDO            "Undo the Previous Action\nUndo"
+    ID_EDIT_REDO            "Redo the Previous Action\nRedo"
+END
+
+STRINGTABLE
+BEGIN
+    ID_VIEW_TOOLBAR         "Display On/Off\nToolBar"
+    ID_VIEW_STATUS_BAR      "Display On/Off\nStatusBar"
+END
+
+STRINGTABLE
+BEGIN
+    ID_INFO_GRAPH           "Display Info. of Readed Image"
+END
+
+STRINGTABLE
+BEGIN
+    AFX_IDS_SCSIZE          "Resize"
+    AFX_IDS_SCMOVE          "Move"
+    AFX_IDS_SCMINIMIZE      "Minimize"
+    AFX_IDS_SCMAXIMIZE      "Maximize"
+    AFX_IDS_SCNEXTWINDOW    "Next Window"
+    AFX_IDS_SCPREVWINDOW    "Previous Window"
+    AFX_IDS_SCCLOSE         "Close and Save File"
+END
+
+STRINGTABLE
+BEGIN
+    AFX_IDS_SCRESTORE       "Restore Size"
+    AFX_IDS_SCTASKLIST      "Task List"
+    AFX_IDS_MDICHILD        "Display Window"
+END
+
+STRINGTABLE
+BEGIN
+    AFX_IDS_PREVIEW_CLOSE   "Exit the Preview Mode\nClose Preview"
+END
+
+STRINGTABLE
+BEGIN
+    IDS_STR_VW_X_DIR        "[X Dirction]"
+    IDS_STR_VW_RVY_DIR      "[-Y Direction]"
+    IDS_STR_FAIL_PLG_CRT_FRM "Failed in creating Frame for Plugin"
+    IDS_STR_FAIL_PLG_NODATA "Plugin does not create the Graphic Data"
+    IDS_STR_FAIL_PLG_PROC   "Failed in processing (or canceled by manual)"
+    IDS_STR_OPN_CTFL        "Open CT Image File"
+    IDS_STR_OPN_VOLFL       "Open Volume Data File"
+    IDS_STR_OPN_RGNFL       "Open Region Data File"
+    IDS_STR_ERR_IMG_FRMT_3D "Format Error. %s cannot be written in 3D Mode"
+    IDS_STR_ERR_IMG_FRMT_COL 
+                            "Format Error. Color channel number of %s is invalid"
+    IDS_STR_ERR_WRT_CMNFL   "File Write Error・ Please see writeCmnHeadFile() [Gio.cpp]\n\nErrorNo = %d "
+    IDS_STR_ERR_OPN_WRT     "File Open Error for write. %s "
+    IDS_STR_VW_VOLDATA      "Volume Data View"
+    IDS_STR_ERR_NO_DISP_VOL "There is no Volume Datat for Display"
+END
+
+STRINGTABLE
+BEGIN
+    IDS_STR_VW_TMP_VIOLDATA "Temp Volume Data View"
+    IDS_STR_VW_THUMB_IMG    "Thumbnail View"
+    IDS_STR_SPCFY_IMG_TMP_SVFL 
+                            "Temporarily specify of Image Data File for Save"
+    IDS_STR_SPCFY_VOL_SVFL  "Specify of Volume Data File for Save"
+    IDS_STR_SPCFY_RGN_SVFL  "Specify of Region Data File for Save"
+    IDS_STR_ERR_NO_SAVE_VOL "There is no Volume Data for Save"
+    IDS_STR_ERR_NO_SAVE_IMG "There is no Image Data for Save"
+    IDS_STR_ERR_NO_SAVE_RGN "There is no Region Data for Save"
+    IDS_STR_ERR_NO_IMG_THUMB "There is no Image Data for generating Thumbnail"
+    IDS_STR_FAIL_COPY_IMGDATA "Failed in copying Image Data"
+    IDS_STR_PL_CLOSE_IMG    "There is Windows that using Main Image Data\nPlease close its Window"
+    IDS_STR_PL_CLOSE_VOL    "There is Windows that using Main Volume Data\nPlease close its Window"
+END
+
+STRINGTABLE
+BEGIN
+    IDS_STR_DO_DEL_IMG      "Do you delete Main Image Data?"
+    IDS_STR_DO_DEL_VOL      "Do you delete Main Volume Data?"
+    IDS_STR_DO_DEL_RGN      "Do you delete Main Region Data?"
+    IDS_STR_CRT_MAIN_IMGDATA 
+                            "Main Image Data is deleted and this Image Data is made to Main Image Data"
+    IDS_STR_NO_PLUGINS      "No Plugins"
+END
+
+#endif    // 英語 resources
+/////////////////////////////////////////////////////////////////////////////
+
+
+
+#ifndef APSTUDIO_INVOKED
+/////////////////////////////////////////////////////////////////////////////
+//
+// Generated from the TEXTINCLUDE 3 resource.
+//
+#define _AFX_NO_SPLITTER_RESOURCES
+#define _AFX_NO_OLE_RESOURCES
+#define _AFX_NO_TRACKER_RESOURCES
+#define _AFX_NO_PROPERTY_RESOURCES
+
+#if !defined(AFX_RESOURCE_DLL) || defined(AFX_TARG_JPN)
+#ifdef _WIN32
+LANGUAGE 17, 1
+//#pragma code_page(932)
+#pragma code_page(65001)
+#endif //_WIN32
+#include "res\CTVIEW.rc2"  // Microsoft Visual C++ 以外のツールで編集されたリソース
+#include "l.jpn\afxres.rc"          // 標準のコンポーネント
+#include "l.jpn\afxprint.rc"        // 印刷/印刷プレビュー リソース
+#endif
+
+/////////////////////////////////////////////////////////////////////////////
+#endif    // not APSTUDIO_INVOKED
+
