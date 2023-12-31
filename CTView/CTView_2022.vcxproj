@@ -139,10 +139,10 @@
     </ResourceCompile>
     <Link>
       <AdditionalDependencies>winmm.lib;d3d9.lib;d3dx9.lib;dxerr.lib;dinput8.lib;dxguid.lib;CT_MFCLib.lib;CT.lib;JunkBox_Win_Lib.lib
-;JunkBox_Lib++.lib;jpeg.lib;%(AdditionalDependencies)</AdditionalDependencies>
+;JunkBox_Lib++.lib;%(AdditionalDependencies)</AdditionalDependencies>
       <OutputFile>.\Debug/CTView.exe</OutputFile>
       <SuppressStartupBanner>true</SuppressStartupBanner>
-      <AdditionalLibraryDirectories>..\..\JunkBox_Lib++\Debug;..\..\JunkBox_Win_Lib\Debug;..\CTLib\Debug;..\CT_MFCLib\Debug;<LibraryPath>$(LibraryPath);$(DXSDK_DIR)Lib\x86</LibraryPath>;C:\DXSDK\Lib\x86;C:\Program Files (x86)\Microsoft DirectX SDK (June 2010)\Lib\x86;..\..\jpeg-9c\Release;%(AdditionalLibraryDirectories)</AdditionalLibraryDirectories>
+      <AdditionalLibraryDirectories>..\..\JunkBox_Lib++\Debug;..\..\JunkBox_Win_Lib\Debug;..\CTLib\Debug;..\CT_MFCLib\Debug;<LibraryPath>$(LibraryPath);$(DXSDK_DIR)Lib\x86</LibraryPath>;C:\DXSDK\Lib\x86;C:\Program Files (x86)\Microsoft DirectX SDK (June 2010)\Lib\x86;..\..\jpeg-9e\Release\Win32;%(AdditionalLibraryDirectories)</AdditionalLibraryDirectories>
       <IgnoreSpecificDefaultLibraries>LIBCMT;MSVCRT;%(IgnoreSpecificDefaultLibraries)</IgnoreSpecificDefaultLibraries>
       <GenerateDebugInformation>true</GenerateDebugInformation>
       <ProgramDatabaseFile>.\Debug/CTView.pdb</ProgramDatabaseFile>
@@ -192,10 +192,10 @@
     </ResourceCompile>
     <Link>
       <AdditionalDependencies>winmm.lib;d3d9.lib;d3dx9.lib;dxerr.lib;dinput8.lib;dxguid.lib;CT_MFCLib.lib;CT.lib;JunkBox_Win_Lib.lib
-;JunkBox_Lib++.lib;jpeg.lib;%(AdditionalDependencies)</AdditionalDependencies>
+;JunkBox_Lib++.lib;%(AdditionalDependencies)</AdditionalDependencies>
       <OutputFile>$(SolutionDir)$(Platform)\$(Configuration)\CTView.exe</OutputFile>
       <SuppressStartupBanner>true</SuppressStartupBanner>
-      <AdditionalLibraryDirectories>..\..\JunkBox_Lib++\Debug64;..\..\JunkBox_Win_Lib\Debug64;..\CTLib\x64\Debug;..\CT_MFCLib\x64\Debug;<LibraryPath>$(LibraryPath);$(DXSDK_DIR)Lib\x64</LibraryPath>;C:\Program Files (x86)\Microsoft DirectX SDK (June 2010)\Lib\x64;..\..\jpeg-9c\x64\Release</AdditionalLibraryDirectories>
+      <AdditionalLibraryDirectories>..\..\JunkBox_Lib++\Debug64;..\..\JunkBox_Win_Lib\Debug64;..\CTLib\x64\Debug;..\CT_MFCLib\x64\Debug;<LibraryPath>$(LibraryPath);$(DXSDK_DIR)Lib\x64</LibraryPath>;C:\Program Files (x86)\Microsoft DirectX SDK (June 2010)\Lib\x64;..\..\jpeg-9e\Release\x64</AdditionalLibraryDirectories>
       <IgnoreSpecificDefaultLibraries>LIBCMT;MSVCRT;%(IgnoreSpecificDefaultLibraries)</IgnoreSpecificDefaultLibraries>
       <GenerateDebugInformation>true</GenerateDebugInformation>
       <ProgramDatabaseFile>.\Debug/CTView.pdb</ProgramDatabaseFile>
@@ -243,10 +243,10 @@
     </ResourceCompile>
     <Link>
       <AdditionalDependencies>winmm.lib;d3d9.lib;d3dx9.lib;dxerr.lib;dinput8.lib;dxguid.lib;CT_MFCLib.lib;CT.lib;JunkBox_Win_Lib.lib
-;JunkBox_Lib++.lib;jpeg.lib;%(AdditionalDependencies)</AdditionalDependencies>
+;JunkBox_Lib++.lib;%(AdditionalDependencies)</AdditionalDependencies>
       <OutputFile>.\Release/CTView.exe</OutputFile>
       <SuppressStartupBanner>true</SuppressStartupBanner>
-      <AdditionalLibraryDirectories>..\..\JunkBox_Lib++\Release;..\..\JunkBox_Win_Lib\Release;..\CTLib\Release;..\CT_MFCLib\Release;<LibraryPath>$(LibraryPath);$(DXSDK_DIR)Lib\x86</LibraryPath>;C:\DXSDK\Lib\x86;C:\Program Files (x86)\Microsoft DirectX SDK (June 2010)\Lib\x86;..\..\jpeg-9c\Release;%(AdditionalLibraryDirectories)</AdditionalLibraryDirectories>
+      <AdditionalLibraryDirectories>..\..\JunkBox_Lib++\Release;..\..\JunkBox_Win_Lib\Release;..\CTLib\Release;..\CT_MFCLib\Release;<LibraryPath>$(LibraryPath);$(DXSDK_DIR)Lib\x86</LibraryPath>;C:\DXSDK\Lib\x86;C:\Program Files (x86)\Microsoft DirectX SDK (June 2010)\Lib\x86;..\..\jpeg-9e\Release\Win32;%(AdditionalLibraryDirectories)</AdditionalLibraryDirectories>
       <IgnoreAllDefaultLibraries>false</IgnoreAllDefaultLibraries>
       <IgnoreSpecificDefaultLibraries>LIBCMTD;MSVCRT;%(IgnoreSpecificDefaultLibraries)</IgnoreSpecificDefaultLibraries>
       <DelayLoadDLLs>%(DelayLoadDLLs)</DelayLoadDLLs>
@@ -294,10 +294,10 @@
     </ResourceCompile>
     <Link>
       <AdditionalDependencies>winmm.lib;d3d9.lib;d3dx9.lib;dxerr.lib;dinput8.lib;dxguid.lib;CT_MFCLib.lib;CT.lib;JunkBox_Win_Lib.lib
-;JunkBox_Lib++.lib;jpeg.lib;%(AdditionalDependencies)</AdditionalDependencies>
+;JunkBox_Lib++.lib;%(AdditionalDependencies)</AdditionalDependencies>
       <OutputFile>$(SolutionDir)$(Platform)\$(Configuration)\CTView.exe</OutputFile>
       <SuppressStartupBanner>true</SuppressStartupBanner>
-      <AdditionalLibraryDirectories>..\..\JunkBox_Lib++\Release64;..\..\JunkBox_Win_Lib\Release64;..\CTLib\x64\Release;..\CT_MFCLib\x64\Release;<LibraryPath>$(LibraryPath);$(DXSDK_DIR)Lib\x64</LibraryPath>;..\..\jpeg-9c\x64\Release;C:\Program Files (x86)\Microsoft DirectX SDK (June 2010)\Lib\x64</AdditionalLibraryDirectories>
+      <AdditionalLibraryDirectories>..\..\JunkBox_Lib++\Release64;..\..\JunkBox_Win_Lib\Release64;..\CTLib\x64\Release;..\CT_MFCLib\x64\Release;<LibraryPath>$(LibraryPath);$(DXSDK_DIR)Lib\x64</LibraryPath>;..\..\jpeg-9e\Release\x64;C:\Program Files (x86)\Microsoft DirectX SDK (June 2010)\Lib\x64</AdditionalLibraryDirectories>
       <IgnoreAllDefaultLibraries>false</IgnoreAllDefaultLibraries>
       <IgnoreSpecificDefaultLibraries>LIBCMTD;MSVCRT;%(IgnoreSpecificDefaultLibraries)</IgnoreSpecificDefaultLibraries>
       <DelayLoadDLLs>%(DelayLoadDLLs)</DelayLoadDLLs>
