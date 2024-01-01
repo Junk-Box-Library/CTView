@@ -3,7 +3,6 @@
 
 #include  "stdafx.h"
 
-
 #include  "tools++.h"
 
 #include  "BasicLib.h"
@@ -40,10 +39,8 @@
 static char THIS_FILE[] = __FILE__;
 #endif
 
-
 using namespace jbxl;
 using namespace jbxwl;
-
 
 
 /////////////////////////////////////////////////////////////////////////////
@@ -189,14 +186,12 @@ void  CCTViewApp::OnDLLFunction(UINT id)
 }
 
 
-
 void  CCTViewApp::OnFreeDLL(void)
 {
 	pMainFrame->RemoveDLLMenu();
 	dllFunctionTBL.free();
 	dllFunctionTBL.dllfunc = NULL;
 }
-
 
 
 void  CCTViewApp::OnReadDLL(void)
@@ -206,7 +201,6 @@ void  CCTViewApp::OnReadDLL(void)
 	dllFunctionTBL.make_module_tbl(_T("get_info"), 4);
 	pMainFrame->AppendDLLMenu();
 }
-
 
 
 
@@ -252,7 +246,6 @@ CCTViewApp::CCTViewApp()
 }
 
 
-
 CCTViewApp::~CCTViewApp()
 {
 	msGraph.ffree();
@@ -272,12 +265,10 @@ CCTViewApp::~CCTViewApp()
 
 
 
-
 /////////////////////////////////////////////////////////////////////////////
 // 唯一の CCTViewApp オブジェクト
 
 CCTViewApp theApp;
-
 
 
 /////////////////////////////////////////////////////////////////////////////
@@ -451,7 +442,6 @@ BOOL CCTViewApp::InitInstance()
 
 
 
-
 /////////////////////////////////////////////////////////////////////////////
 // アプリケーションのバージョン情報で使われる CAboutDlg ダイアログ
 //
@@ -482,13 +472,11 @@ public:
 };
 
 
-
 CAboutDlg::CAboutDlg() : CDialog(CAboutDlg::IDD)
 {
 	//{{AFX_DATA_INIT(CAboutDlg)
 	//}}AFX_DATA_INIT
 }
-
 
 
 void CAboutDlg::DoDataExchange(CDataExchange* pDX)
@@ -499,14 +487,12 @@ void CAboutDlg::DoDataExchange(CDataExchange* pDX)
 }
 
 
-
 BEGIN_MESSAGE_MAP(CAboutDlg, CDialog)
 	//{{AFX_MSG_MAP(CAboutDlg)
 		// メッセージ ハンドラはありません．
 	//}}AFX_MSG_MAP
 //	ON_WM_DROPFILES()
 END_MESSAGE_MAP()
-
 
 
 // アバウトダイアログを実行するためのアプリケーション コマンド
@@ -517,7 +503,6 @@ void CCTViewApp::OnAppAbout()
 }
 
 
-
 // 情報表示
 void CCTViewApp::OnInfoGraph()
 {
@@ -526,10 +511,8 @@ void CCTViewApp::OnInfoGraph()
 
 
 
-
 /////////////////////////////////////////////////////////////////////////////
 // CCTViewApp メッセージ ハンドラ
-
 
 
 ////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////
@@ -616,7 +599,6 @@ void  CCTViewApp::OnFileOpen()
 
 
 
-
 /////////////////////////////////////////////////////////////////////////////////////////////////////////
 // 2D画像データの読み込みと表示
 
@@ -634,7 +616,6 @@ void  CCTViewApp::OnMCT()
 	CExFrame* pfrm = openMCTFile(fname);
 	return;
 }
-
 
 
 //
@@ -671,7 +652,6 @@ CExFrame*   CCTViewApp::openMCTFile(LPCTSTR fname, BOOL multi, int vmode)
 }
 
 
-
 //
 // マルチＣＴ：「表示」メニューより選択．
 //
@@ -680,7 +660,6 @@ void  CCTViewApp::OnViewMCT()
 	CExFrame* pfrm = viewMCTXYZ(VIEW_ZDIR);
 	return;
 }
-
 
 
 void  CCTViewApp::OnViewMCTX() 
@@ -693,7 +672,6 @@ void  CCTViewApp::OnViewMCTX()
 }
 
 
-
 void  CCTViewApp::OnViewMCTY() 
 {
 	CString mesg;
@@ -702,7 +680,6 @@ void  CCTViewApp::OnViewMCTY()
 	//CExFrame* pfrm = viewMCTXYZ(VIEW_YDIR, _T(" [-Y方向]"));
 	return;	
 }
-
 
 
 //
@@ -761,7 +738,6 @@ CExFrame*  CCTViewApp::viewMCTXYZ(int vmode, LPCTSTR title)
 }
 
 
-
 //
 // Well Known データ用（ファイルオープン）
 //		Sun Raster, Jpeg
@@ -795,13 +771,13 @@ CExFrame*  CCTViewApp::openMGRFile(LPCTSTR fname)
 }
 
 
-
 //
 //  未知のデータ形式（ファイルオープン）
 //
 CExFrame*  CCTViewApp::open2DFile(LPCTSTR fname) 
 {
 	CExFrame* pfrm = CreateDocFrmView(pDocTempl2D, this);
+
 	int ret = ExecDocFrmView(pfrm, fname);
 	if (ret==0) {
 		preTitle = pfrm->pDoc->preTitle;
@@ -815,7 +791,6 @@ CExFrame*  CCTViewApp::open2DFile(LPCTSTR fname)
 	ExecDocFrmViewError(m_pMainWnd->m_hWnd, ret);
 	return pfrm;
 }
-
 
 
 //
@@ -931,7 +906,6 @@ void  CCTViewApp::OnFileSaveFL()
 
 
 
-
 /////////////////////////////////////////////////////////////////////////////////////////////////////////
 // 3D簡易サーフェイスレンダリング
 
@@ -949,7 +923,6 @@ void  CCTViewApp::OnFileOpenVOL()
 	CExFrame* pfrm = openVOLFile((LPCTSTR)fname);	
 	return;
 }
-
 
 
 CExFrame*  CCTViewApp::openVOLFile(LPCTSTR fname, BOOL multi) 
@@ -989,7 +962,6 @@ CExFrame*  CCTViewApp::openVOLFile(LPCTSTR fname, BOOL multi)
 	
 	return pfrm;
 }
-
 
 
 //
@@ -1034,7 +1006,6 @@ void  CCTViewApp::OnViewOpenVOL()
 }
 
 
-
 //
 // 一時的ボリュームデータの表示
 //		MSGraph<sWord>* ms, RgnData* prd は free() される
@@ -1068,7 +1039,6 @@ CExFrame*  CCTViewApp::showTempSVOL(MSGraph<sWord>* ms, LPCTSTR title)
 
 	return pfrm;
 }
-
 
 
 //
@@ -1112,7 +1082,6 @@ void  CCTViewApp::OnFileSaveVOL()
 
 
 
-
 /////////////////////////////////////////////////////////////////////////////////////////////////////////
 // CT画像のサムネイル
 
@@ -1130,7 +1099,6 @@ void  CCTViewApp::OnFileTn()
 	CExFrame* pfrm = openTBNFile((LPCTSTR)fname);
 	return;
 }
-
 
 
 CExFrame*  CCTViewApp::openTBNFile(LPCTSTR fname, BOOL multi) 
@@ -1160,7 +1128,6 @@ CExFrame*  CCTViewApp::openTBNFile(LPCTSTR fname, BOOL multi)
 	ExecDocFrmViewError(m_pMainWnd->m_hWnd, ret);
 	return pfrm;
 }
-
 
 
 //
@@ -1213,7 +1180,6 @@ void  CCTViewApp::OnViewTn()
 
 
 
-
 /////////////////////////////////////////////////////////////////////////////////////////////////////////
 // 領域データ
 
@@ -1231,7 +1197,6 @@ void  CCTViewApp::OnFileOpenRGSL()
 	CExFrame* pfrm = openRGNFile((LPCTSTR)fname);
 	return;
 }
-
 
 
 CExFrame*  CCTViewApp::openRGNFile(LPCTSTR fname) 
@@ -1264,7 +1229,6 @@ CExFrame*  CCTViewApp::openRGNFile(LPCTSTR fname)
 }
 
 
-
 /*
 //
 // 領域データ表示
@@ -1275,7 +1239,6 @@ void CCTViewApp::OnViewRgn()
 	
 }
 */
-
 
 
 //
@@ -1316,7 +1279,6 @@ void  CCTViewApp::OnFileSaveRGSL()
 
 
 
-
 /////////////////////////////////////////////////////////////////////////////////////////////////////////
 //　メモリ
 
@@ -1332,7 +1294,6 @@ void  CCTViewApp::OnToolShwRefn()
 }
 
 
-
 //
 // 「読み込みデータ削除」
 //
@@ -1340,7 +1301,6 @@ void  CCTViewApp::OnDelMData()
 {
 	deleteMData(false);
 }
-
 
 
 //
@@ -1352,7 +1312,6 @@ void  CCTViewApp::OnDelVData()
 }
 
 
-
 //
 // 「領域データ削除」
 //
@@ -1360,7 +1319,6 @@ void  CCTViewApp::OnDelRData()
 {
 	deleteRData(false);
 }
-
 
 
 bool  CCTViewApp::deleteMData(bool nocnfrm) 
@@ -1400,7 +1358,6 @@ bool  CCTViewApp::deleteMData(bool nocnfrm)
 }
 
 
-
 bool  CCTViewApp::deleteVData(bool nocnfrm) 
 {
 	if (hasMSGraphVOL) {
@@ -1432,7 +1389,6 @@ bool  CCTViewApp::deleteVData(bool nocnfrm)
 }
 
 
-
 bool  CCTViewApp::deleteRData(bool nocnfrm) 
 {
 	if (rgnDataNum>0) {
@@ -1452,7 +1408,6 @@ bool  CCTViewApp::deleteRData(bool nocnfrm)
 	}
 	return true;
 }
-
 
 
 
@@ -1483,7 +1438,6 @@ void  CCTViewApp::OnToolSet()
 }
 
 
-
 //
 // 「ファイルヘッダ設定」
 //
@@ -1491,7 +1445,6 @@ void CCTViewApp::OnToolHeader()
 {
 	SetHeaderDLG.DoModal();
 }
-
 
 
 
@@ -1507,7 +1460,6 @@ void CCTViewApp::OnToolHeader()
 // APP_CALLBACK_TVOL:	結合用メニューバー有りの3Dボリューム表示
 // APP_CALLBACK_VOLM:	3Dボリュームデータの結合用
 //
-
 
 CExFrame*  CCTViewApp::TemplateCallBack(CExFrame* pf, int mode, LPCTSTR title) 
 {
@@ -1605,7 +1557,6 @@ CExFrame*  CCTViewApp::TemplateCallBack(CExFrame* pf, int mode, LPCTSTR title)
 
 
 
-
 //////////////////////////////////////////////////////////////////////////////
 // Junk Code
 
@@ -1630,7 +1581,6 @@ CExFrame*  CCTViewApp::TemplateCallBack(CExFrame* pf, int mode, LPCTSTR title)
 		else {	// リージョングローイング
 		}*/
 
-
 		// 領域データの確保
 		/*
 		if (pf->anyData!=NULL) {
@@ -1643,7 +1593,6 @@ CExFrame*  CCTViewApp::TemplateCallBack(CExFrame* pf, int mode, LPCTSTR title)
 				DEBUG_ERR("TemplateCallBack(mode=%d): 最大領域データ数(%d)を超えた．", mode, RGNDATA_MAXNUM);
 			}
 		}*/
-
 
 
 //
@@ -1661,7 +1610,3 @@ CMultiDocTemplate*  CCTViewApp::GetMultiDocTemplate(int mode)
 		default:			 return NULL;
 	}
 }
-
-
-
-

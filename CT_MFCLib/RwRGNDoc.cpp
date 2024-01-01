@@ -10,17 +10,14 @@
 #include "Branch.h"
 #include "Tree.h"
 
-
 #ifdef _DEBUG
 #define new DEBUG_NEW
 #undef THIS_FILE
 static char THIS_FILE[] = __FILE__;
 #endif
 
-
 using namespace jbxl;
 using namespace jbxwl;
-
 
 
 
@@ -35,20 +32,16 @@ CRwRGNDoc::CRwRGNDoc()
 	rgnData = NULL;
 }
 
-
-
 CRwRGNDoc::~CRwRGNDoc()
 {
 //	delete(rgnData);	
 }
-
 
 BEGIN_MESSAGE_MAP(CRwRGNDoc, CExDocument)
 	//{{AFX_MSG_MAP(CRwRGNDoc)
 		// メモ - ClassWizard はこの位置にマッピング用のマクロを追加または削除します。
 	//}}AFX_MSG_MAP
 END_MESSAGE_MAP()
-
 
 
 
@@ -70,8 +63,6 @@ void CRwRGNDoc::Dump(CDumpContext& dc) const
 
 
 
-
-
 /////////////////////////////////////////////////////////////////////////////
 // CRwRGNDoc シリアライズ
 
@@ -86,9 +77,6 @@ void CRwRGNDoc::Serialize(CArchive& ar)
 		// TODO: この位置に読み込み用のコードを追加してください
 	}
 }
-
-
-
 
 
 
@@ -129,14 +117,6 @@ BOOL  CRwRGNDoc::ReadDataFile(LPCTSTR fname)
 }
 
 
-
-
-
-
-
-
-
-//
 //
 //
 int  writeRgnFileWithCounter(LPCTSTR dname, RgnData** rgnData, int rgnDataNum)
@@ -168,11 +148,6 @@ int  writeRgnFileWithCounter(LPCTSTR dname, RgnData** rgnData, int rgnDataNum)
 
 	return ret;
 }
-
-
-
-
-
 
 
 RgnData*  readRgnFileWithCounter(LPCTSTR fname)
@@ -207,8 +182,3 @@ RgnData*  readRgnFileWithCounter(LPCTSTR fname)
 
 	return pRgnData;
 }
-
-
-
-
-
