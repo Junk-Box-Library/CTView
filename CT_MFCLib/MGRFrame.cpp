@@ -3,7 +3,6 @@
 
 #include "stdafx.h"
 
-
 #include "GraphLib.h"
 #include "ExClass.h"
 #include "WinTools.h"
@@ -11,7 +10,6 @@
 #include "MGRFrame.h"
 #include "ContrastDLG.h"
 #include "CTCallBack.h"
-
 
 //#include "CT.h"
 //#include "RegionGDLG.h"
@@ -21,9 +19,7 @@
 //#include "SearchStart.h"
 //#include "DxSMPLDisp.h"
 
-
 #include "resource.h"
-
 
 #ifdef _DEBUG
 #define new DEBUG_NEW
@@ -31,10 +27,8 @@
 static char THIS_FILE[] = __FILE__;
 #endif
 
-
 using namespace jbxl;
 using namespace jbxwl;
-
 
 
 /////////////////////////////////////////////////////////////////////////////
@@ -48,13 +42,10 @@ CMGRFrame::CMGRFrame()
 }
 
 
-
 CMGRFrame::~CMGRFrame()
 {
 
 }
-
-
 
 
 BEGIN_MESSAGE_MAP(CMGRFrame, CExFrame)
@@ -67,7 +58,6 @@ BEGIN_MESSAGE_MAP(CMGRFrame, CExFrame)
 	//}}AFX_MSG_MAP
 //	ON_WM_ERASEBKGND()
 END_MESSAGE_MAP()
-
 
 
 
@@ -97,9 +87,6 @@ int CMGRFrame::OnCreate(LPCREATESTRUCT lpCreateStruct)
 }
 
 
-
-
-
 //
 // コントラスト設定
 //
@@ -111,8 +98,6 @@ void CMGRFrame::OnMgrContrast()
 		delete(cntDLG);
 	}
 }
-
-
 
 
 //
@@ -139,13 +124,8 @@ void CMGRFrame::OnMgrToVOL()
 }
 
 
-
-
-
-
 //
 // 操作中にウィンドウのクローズボタンをクリックすると，セグメンテーションエラーを起こす．
-//
 //
 POINT  CMGRFrame::GetMousePoint(int click) 
 {
@@ -161,7 +141,6 @@ POINT  CMGRFrame::GetMousePoint(int click)
 	oldmspos.x = oldmspos.y = -1;
 	//uByte* ptr = (uByte*)&(CmnHeadPoint(pView->cmnHead, 0, 0, pView->vSBpos));
 	uByte* ptr = pView->viewData.grptr;
-
 
 	do {
 		mousepos   = pView->GetMousePos();
@@ -263,14 +242,6 @@ POINT  CMGRFrame::GetMousePoint(int click)
 
 
 
-
-
-
-
-
-
-
-
 /////////////////////////////////////////////////////////////////////////////////////
 // メモ：メッセージ処理サンプル
 //
@@ -281,9 +252,7 @@ POINT  CMGRFrame::GetMousePoint(int click)
 		TranslateMessage(&msg);
 		DispatchMessage(&msg);
 	}
-/**/
-
-  
+*/
 
 /*
 MSG msg;
@@ -293,9 +262,7 @@ while (PeekMessage(&msg,0,0,0,PM_REMOVE)){
 		DispatchMessage(&msg);
 	}
 }
-/**/
-
-	
+*/
 
 /*
 if( ( (MSG *)lParam )->message == WM_MOUSEWHEEL )
@@ -303,10 +270,7 @@ if( ( (MSG *)lParam )->message == WM_MOUSEWHEEL )
 	TRACE0( "Hit!(Hook)\n" );
 	( (MSG *)lParam )->message = WM_NULL;	//ここで書き換えちゃう。
 }
-/**/
-
-
-
+*/
 
 /*	
 	MSG msg;
@@ -319,10 +283,7 @@ if( ( (MSG *)lParam )->message == WM_MOUSEWHEEL )
 		}
 		DispatchMessage(&msg);
 	}
-	
-/**/
-
-
+*/
 
 /*
  LPMSG＝MSG FAR * （Win16)；MSG * （Win32) 
@@ -594,11 +555,6 @@ if( ( (MSG *)lParam )->message == WM_MOUSEWHEEL )
 	#define WM_USER 0x0400  
 
 
-
-
-
-
-
 ウィンドウメッセージ 一覧表示 メッセージ名 意味 
 
 WM_ACTIVATE					ウインドウがアクティブ・非アクティブになるとき 
@@ -779,7 +735,6 @@ WM_VSCROLLCLIPBOARD			クリップボードビューワ内でスクロールイ�
 WM_WINDOWPOSCHANGED			etWindowPos()後に位置とサイズを変更したウインドウに送られる 
 WM_WINDOWPOSCHANGING		SetWindowPos()で位置とサイズを変更しているウインドウに送られる 
 WM_WININICHANGE				WIN.INIが変更された 
-
 
 /**/
 
