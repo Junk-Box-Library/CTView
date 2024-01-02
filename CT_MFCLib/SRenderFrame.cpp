@@ -18,17 +18,14 @@ using namespace jbxl;
 using namespace jbxwl;
 
 
-
 /////////////////////////////////////////////////////////////////////////////
 // CSRenderFrame
 
 IMPLEMENT_DYNCREATE(CSRenderFrame, CExFrame)
 
-
 CSRenderFrame::CSRenderFrame()
 {
 }
-
 
 
 CSRenderFrame::~CSRenderFrame()
@@ -44,7 +41,6 @@ BEGIN_MESSAGE_MAP(CSRenderFrame, CExFrame)
 	ON_WM_CLOSE()
 	//}}AFX_MSG_MAP
 END_MESSAGE_MAP()
-
 
 
 
@@ -75,10 +71,6 @@ int CSRenderFrame::OnCreate(LPCREATESTRUCT lpCreateStruct)
 }
 
 
-
-
-
-
 void CSRenderFrame::OnSRndrOk() 
 {
 	anyData = pDoc->anyData;	// 領域データ
@@ -92,18 +84,12 @@ void CSRenderFrame::OnSRndrOk()
 }
 
 
-
-
-
-
 void CSRenderFrame::OnSRndrCancel() 
 {
 //	if (pDoc->anyData!=NULL) ((RgnData*)(pDoc->anyData))->mfree();
 	
 	DestroyWindow();
 }
-
-
 
 
 void CSRenderFrame::OnClose() 

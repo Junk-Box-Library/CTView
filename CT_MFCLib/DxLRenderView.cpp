@@ -2,9 +2,7 @@
 //
 
 #include "stdafx.h"
-
 #include "DxLRenderView.h"
-
 
 #ifdef _DEBUG
 #define new DEBUG_NEW
@@ -35,12 +33,10 @@ CDxLRenderView::CDxLRenderView()
 }
 
 
-
 CDxLRenderView::~CDxLRenderView()
 {
 	delete(brcData);
 }
-
 
 
 BEGIN_MESSAGE_MAP(CDxLRenderView, CDxVTXBaseView)
@@ -48,7 +44,6 @@ BEGIN_MESSAGE_MAP(CDxLRenderView, CDxVTXBaseView)
 	ON_WM_TIMER()
 	//}}AFX_MSG_MAP
 END_MESSAGE_MAP()
-
 
 
 /////////////////////////////////////////////////////////////////////////////
@@ -62,7 +57,6 @@ void CDxLRenderView::OnDraw(CDC* pDC)
 */
 
 
-
 /////////////////////////////////////////////////////////////////////////////
 // CDxLRenderView 診断
 
@@ -73,13 +67,11 @@ void CDxLRenderView::AssertValid() const
 }
 
 
-
 void CDxLRenderView::Dump(CDumpContext& dc) const
 {
 	CDxVTXBaseView::Dump(dc);
 }
 #endif //_DEBUG
-
 
 
 
@@ -100,7 +92,6 @@ void  CDxLRenderView::OnInitialUpdate()
 	for (int i=0; i<brcData->no; i++) {
 		datano += brcData->br[i].vn - 1;
 	}
-
 
 	Rbound = brcData->rb;
 	center = D3DXVECTOR3((Rbound.xmax + Rbound.xmin)/2.f,
@@ -129,7 +120,6 @@ void  CDxLRenderView::OnInitialUpdate()
 	hasViewData = TRUE;
 	return;
 }
-
 
 
 void  CDxLRenderView::SetState()
@@ -162,7 +152,6 @@ void  CDxLRenderView::SetState()
 	D3DXMatrixPerspectiveFovLH(&matProj, 60.0f*(float)PI/180.0f, 1.0f, 0.0f, (float)(10*msize*sizeFac));
 	lpD3DDevice->SetTransform(D3DTS_PROJECTION, &matProj);
 
-
 	// カメラの位置は mWheelAc で決める．
 	if (mWheelAc==0.0) mWheelAc = 1.5f*msize*sizeFac;
 	ExMouseWheel();
@@ -173,7 +162,6 @@ void  CDxLRenderView::SetState()
 	D3DXMatrixTranslation(&matTrans, -(float)(center.x*sizeFac), -(float)(center.y*sizeFac), (float)(center.z*sizeFac));
 	lpD3DDevice->SetTransform(D3DTS_WORLD, &matTrans);
 }
-
 
 
 //
@@ -192,9 +180,7 @@ void   CDxLRenderView::ExMouseWheel()
 }
 
 
-
-
-	void    CDxLRenderView::ExecRender()
+void    CDxLRenderView::ExecRender()
 {
 	HRESULT hr;
 
@@ -217,7 +203,6 @@ void   CDxLRenderView::ExMouseWheel()
 	if (FAILED(hr)) { DEBUG_ERROR("CBREPView::ExecRender: シーンの終了失敗"); return;}
 	// シーンの描画終了
 
-
 	// 画面表示
 	hr = lpD3DDevice->Present(NULL, NULL, NULL, NULL);
 	if (FAILED(hr)) {	// デバイスチェック
@@ -231,7 +216,6 @@ void   CDxLRenderView::ExMouseWheel()
 		}
 	}
 }
-
 
 
 // 頂点バッファの準備
@@ -307,7 +291,6 @@ BOOL   CDxLRenderView::PrepareVB()
 }
 
 
-
 //
 //  (angleX, angleY -> angle?, angle?)
 // 
@@ -319,13 +302,11 @@ void   CDxLRenderView::ExRotationAngle()
 }
 
 
-
 void   CDxLRenderView::ClearObject()
 {
 	hasViewData = FALSE;
 //	TimerStop();
 }
-
 
 
 void   CDxLRenderView::InitObject()
@@ -334,7 +315,3 @@ void   CDxLRenderView::InitObject()
 //	TimerStart();
 	hasViewData = TRUE;
 }
-
-
-
-

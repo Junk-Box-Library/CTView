@@ -7,11 +7,7 @@
 // ShowReferNoDLG.h : ヘッダー ファイル
 //
 
-
 #include "resource.h"
-
-
-
 
 
 /////////////////////////////////////////////////////////////////////////////
@@ -32,21 +28,17 @@ public:
 	CStatic*	mctSBox;
 	CStatic*	tbnSBox;
 
-
 // コンストラクション
 public:
 	CShowReferNoDLG(int data, int vol, int rgn, int mct, int tbn, CWnd* pParent = NULL);
 
 	virtual BOOL  OnInitDialog();
 
-
-
 // ダイアログ データ
 	//{{AFX_DATA(CShowReferNoDLG)
 	enum { IDD = IDD_REFNODLG };
 		// メモ: ClassWizard はこの位置にデータ メンバを追加します。
 	//}}AFX_DATA
-
 
 // オーバーライド
 	// ClassWizard は仮想関数のオーバーライドを生成します。

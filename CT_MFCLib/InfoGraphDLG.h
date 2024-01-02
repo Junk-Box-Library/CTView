@@ -3,12 +3,8 @@
 #include "resource.h"
 #include "Gdata.h"
 
-
-
 using namespace jbxl;
 //using namespace jbxwl;
-
-
 
 // CInfoGraphDLG ダイアログ
 
@@ -50,7 +46,6 @@ public:
 
 	CStatic*	zxySBox;
 
-
 public:
 	CInfoGraphDLG(CWnd* pParent = NULL);   // 標準コンストラクタ
 	virtual ~CInfoGraphDLG();
@@ -59,8 +54,6 @@ public:
 	void    setVal(MSGraph<sWord> vp);
 	void    setVal(CmnHead hd);
 	void    setToWindowItem();
-
-
 
 // ダイアログ データIDD_INFOBOX
 	enum { IDD = IDD_INFOBOX };

@@ -5,16 +5,11 @@
 #pragma once
 #endif // _MSC_VER > 1000
 
-
-
 #include "ExClass.h"
 #include "resource.h"
 
-
 using namespace jbxl;
 using namespace jbxwl;
-
-
 
 /////////////////////////////////////////////////////////////////////////////
 // CSRenderFrame フレーム

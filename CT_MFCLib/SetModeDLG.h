@@ -7,10 +7,7 @@
 // SetModeDLG.h : ヘッダー ファイル
 //
 
-
 #include  "resource.h"
-
-
 
 
 /////////////////////////////////////////////////////////////////////////////
@@ -33,9 +30,6 @@ public:
 	CButton*	rzCBox;
 	CEdit*		bsEBox;
 
-
-
-
 // コンストラクション
 public:
 	// 標準のコンストラクタ
@@ -44,13 +38,11 @@ public:
 
 	virtual BOOL  OnInitDialog();
 
-
 // ダイアログ データ
 	//{{AFX_DATA(CSetModeDLG)
 	enum { IDD = IDD_SETDLG };
 		// メモ: ClassWizard はこの位置にデータ メンバを追加します。
 	//}}AFX_DATA
-
 
 // オーバーライド
 	// ClassWizard は仮想関数のオーバーライドを生成します。

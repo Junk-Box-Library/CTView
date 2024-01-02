@@ -19,7 +19,6 @@ using namespace jbxl;
 //using namespace jbxwl;
 
 
-
 /////////////////////////////////////////////////////////////////////////////
 // CSetModeDLG ダイアログ
 
@@ -48,7 +47,6 @@ CSetModeDLG::CSetModeDLG(BOOL vcmode, BOOL rzmode, BOOL pmmode, BOOL acmode, int
 }
 
 
-
 void CSetModeDLG::DoDataExchange(CDataExchange* pDX)
 {
 	CDialog::DoDataExchange(pDX);
@@ -56,7 +54,6 @@ void CSetModeDLG::DoDataExchange(CDataExchange* pDX)
 		// メモ - ClassWizard はこの位置にマッピング用のマクロを追加または削除します。
 	//}}AFX_DATA_MAP
 }
-
 
 
 BEGIN_MESSAGE_MAP(CSetModeDLG, CDialog)
@@ -73,7 +70,6 @@ END_MESSAGE_MAP()
 
 /////////////////////////////////////////////////////////////////////////////
 // CSetModeDLG メッセージ ハンドラ
-
 
 BOOL   CSetModeDLG::OnInitDialog()
 {
@@ -105,7 +101,6 @@ BOOL   CSetModeDLG::OnInitDialog()
 }
 
 
-
 void CSetModeDLG::OnOK() 
 {
 	TCHAR buf[LMNAME];
@@ -127,7 +122,6 @@ void CSetModeDLG::OnOK()
 
 	CDialog::OnOK();
 }
-
 
 
 /*

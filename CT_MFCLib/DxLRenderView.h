@@ -47,10 +47,7 @@ typedef struct
 } SVERTEXL;
 
 
-
 #define	 FVF_SVERTEXL (D3DFVF_XYZ | D3DFVF_PSIZE | D3DFVF_DIFFUSE)
-
-
 
 
 /////////////////////////////////////////////////////////////////////////////
@@ -61,7 +58,6 @@ class CDxLRenderView : public CDxVTXBaseView
 protected:
 	CDxLRenderView();           // 動的生成に使用されるプロテクト コンストラクタ
 	DECLARE_DYNCREATE(CDxLRenderView)
-
 
 // アトリビュート
 public:
@@ -77,7 +73,6 @@ public:
 
 	int		datano;
 
-
 // オペレーション
 public:
 	virtual void    SetState();
@@ -91,11 +86,6 @@ public:
 	virtual void	ExMouseWheel();
 
 	int		GetValidVoxelNum();
-
-
-
-
-
 
 // オーバーライド
 	// ClassWizard は仮想関数のオーバーライドを生成します。
@@ -121,11 +111,6 @@ protected:
 	//}}AFX_MSG
 	DECLARE_MESSAGE_MAP()
 };
-
-
-
-
-
 
 
 

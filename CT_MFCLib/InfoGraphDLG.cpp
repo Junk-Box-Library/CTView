@@ -1,16 +1,13 @@
 ﻿// InfoGraphDLG.cpp : 実装ファイル
 //
-
 #include "stdafx.h"
 
 #include "tools++.h"
 #include "InfoGraphDLG.h"
 #include "WinBaseResource.h"
 
-
 using namespace jbxl;
 //using namespace jbxwl;
-
 
 
 // CInfoGraphDLG ダイアログ
@@ -54,14 +51,10 @@ CInfoGraphDLG::CInfoGraphDLG(CWnd* pParent /*=NULL*/)
 }
 
 
-
-
-
-
-
 CInfoGraphDLG::~CInfoGraphDLG()
 {
 }
+
 
 void CInfoGraphDLG::DoDataExchange(CDataExchange* pDX)
 {
@@ -74,8 +67,6 @@ END_MESSAGE_MAP()
 
 
 // CInfoGraphDLG メッセージ ハンドラ
-
-
 
 BOOL   CInfoGraphDLG::OnInitDialog(void)
 {
@@ -100,10 +91,6 @@ BOOL   CInfoGraphDLG::OnInitDialog(void)
 
 	return TRUE;
 }
-
-
-
-
 
 
 void  CInfoGraphDLG::setVal(CmnHead hd)
@@ -154,9 +141,6 @@ void  CInfoGraphDLG::setVal(CmnHead hd)
 }
 
 
-
-
-
 void  CInfoGraphDLG::setVal(MSGraph<sWord> vp)
 {
 	if (xsize==0) xsize = vp.xs;
@@ -168,9 +152,6 @@ void  CInfoGraphDLG::setVal(MSGraph<sWord> vp)
 	rzxy = vp.RZxy;
 	base = vp.base;
 }
-
-
-
 
 
 void  CInfoGraphDLG::setToWindowItem()

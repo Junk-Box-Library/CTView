@@ -1113,19 +1113,21 @@ CExFrame*  CCTViewApp::openTBNFile(LPCTSTR fname, BOOL multi)
 
 	int ret = ExecDocFrmView(pfrm, fname);
 	if (ret==0) {
+		CString mesg;
+		mesg.LoadString(IDS_STR_VW_THUMB_IMG);
 		msGraph       = pfrm->pDoc->msGraph;
 		cmnHeadTBN    = pfrm->pDoc->cmnHead;
-		preTitle	  = pfrm->pDoc->preTitle;
+		infHead       = pfrm->pDoc->infHead;
+		preTitle	  = mesg + _T(": ");
 		Title		  = pfrm->pDoc->Title;
 		pstTitle	  = pfrm->pDoc->pstTitle;
-		infHead		  = pfrm->pDoc->infHead;
 		hasMSGraph    = TRUE;
 		hasCmnHeadTBN = TRUE;
 		infoGraphDlg->setVal(infHead);
 		infoGraphDlg->setVal(msGraph);
 	}
-	
 	ExecDocFrmViewError(m_pMainWnd->m_hWnd, ret);
+
 	return pfrm;
 }
 
@@ -1140,26 +1142,28 @@ void  CCTViewApp::OnViewTn()
 	CString mesg, noti;
 
 	if (hasMSGraph) {
-		mesg.LoadString(IDS_STR_VW_THUMB_IMG);
 		pfrm = CreateDocFrmView(pDocTemplTBN, this);
+		//
+		CString mesg;
+		mesg.LoadString(IDS_STR_VW_THUMB_IMG);
+		preTitle = mesg + _T(": ");
 		pfrm->pDoc->msGraph     = msGraph;
 		pfrm->pDoc->hasReadData = TRUE;
 		pfrm->pDoc->ctrlCntrst  = forceContrastMode;
 		pfrm->pDoc->preTitle	= mesg + _T(": ");
-		//pfrm->pDoc->preTitle	= "サムネイル表示： ";
 		pfrm->pDoc->Title		= Title;
-		pfrm->pDoc->pstTitle	= pstTitle;
+		pfrm->pDoc->pstTitle    = _T("");
 
 		if (hasCmnHeadTBN) {
-			pfrm->pDoc->cmnHead     = cmnHeadTBN;
+			pfrm->pDoc->cmnHead = cmnHeadTBN;
 			pfrm->pDoc->hasViewData = TRUE;
 			ret = ExecDocFrmView(pfrm);
 		}
 		else {
 			pfrm->pDoc->cmnHead = cmnHeadTBN;
 			ret = ExecDocFrmView(pfrm);
-			if (ret==0) {		
-				cmnHeadTBN = pfrm->pDoc->cmnHead;
+			if (ret==0) {
+				cmnHeadTBN    = pfrm->pDoc->cmnHead;
 				hasCmnHeadTBN = TRUE;
 			}
 		}

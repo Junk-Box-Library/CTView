@@ -11,10 +11,7 @@ CMGRTempFrame クラス
 
 	CDxMGRView クラス用フレーム
 
-
 */
-
-
 
 #include  "ContrastDLG.h"
 #include  "ExFrame.h"
@@ -22,9 +19,6 @@ CMGRTempFrame クラス
 
 using namespace jbxl;
 using namespace jbxwl;
-
-using namespace jbxwl;
-
 
 
 /////////////////////////////////////////////////////////////////////////////
@@ -36,17 +30,11 @@ class CMGRTempFrame : public CExFrame
 protected:
 	CMGRTempFrame();           // 動的生成に使用されるプロテクト コンストラクタ。
 
-
-
 // アトリビュート
 public:
 
-
 // オペレーション
 public:
-
-
-
 
 // オーバーライド
 	// ClassWizard は仮想関数のオーバーライドを生成します

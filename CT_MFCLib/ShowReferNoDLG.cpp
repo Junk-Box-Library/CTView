@@ -19,11 +19,8 @@ using namespace jbxl;
 //using namespace jbxwl;
 
 
-
-
 /////////////////////////////////////////////////////////////////////////////
 // CShowReferNoDLG ダイアログ
-
 
 CShowReferNoDLG::CShowReferNoDLG(int data, int vol, int rgn, int mct, int tbn, CWnd* pParent)
 	: CDialog(CShowReferNoDLG::IDD, pParent)
@@ -46,9 +43,6 @@ CShowReferNoDLG::CShowReferNoDLG(int data, int vol, int rgn, int mct, int tbn, C
 }
 
 
-
-
-
 void CShowReferNoDLG::DoDataExchange(CDataExchange* pDX)
 {
 	CDialog::DoDataExchange(pDX);
@@ -56,7 +50,6 @@ void CShowReferNoDLG::DoDataExchange(CDataExchange* pDX)
 		// メモ - ClassWizard はこの位置にマッピング用のマクロを追加または削除します。
 	//}}AFX_DATA_MAP
 }
-
 
 
 BEGIN_MESSAGE_MAP(CShowReferNoDLG, CDialog)
@@ -69,7 +62,6 @@ END_MESSAGE_MAP()
 
 /////////////////////////////////////////////////////////////////////////////
 // CShowReferNoDLG メッセージ ハンドラ
-
 
 BOOL   CShowReferNoDLG::OnInitDialog()
 {
@@ -100,5 +92,3 @@ BOOL   CShowReferNoDLG::OnInitDialog()
 
 	return TRUE;
 }
-
-

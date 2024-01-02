@@ -10,8 +10,6 @@ using namespace jbxl;
 using namespace jbxwl;
 
 
-
-
 // CMGRSimpleFrame
 
 IMPLEMENT_DYNCREATE(CMGRSimpleFrame, CExFrame)
@@ -22,19 +20,14 @@ CMGRSimpleFrame::CMGRSimpleFrame()
 }
 
 
-
 CMGRSimpleFrame::~CMGRSimpleFrame()
 {
 }
 
 
-
-
 BEGIN_MESSAGE_MAP(CMGRSimpleFrame, CExFrame)
 	ON_WM_CREATE()
 END_MESSAGE_MAP()
-
-
 
 
 // CMGRSimpleFrame メッセージ ハンドラ

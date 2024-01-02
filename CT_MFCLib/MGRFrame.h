@@ -6,8 +6,6 @@
 #endif // _MSC_VER > 1000
 
 
-
-
 /**
 CMGRFrame クラス
 
@@ -15,19 +13,12 @@ CMGRFrame クラス
 
 */
 
-
 #include  "ContrastDLG.h"
 #include  "ExFrame.h"
 
 
 using namespace jbxl;
 using namespace jbxwl;
-
-
-using namespace jbxl;
-using namespace jbxwl;
-
-
 
 
 /////////////////////////////////////////////////////////////////////////////
@@ -39,17 +30,14 @@ class CMGRFrame : public CExFrame
 protected:
 	CMGRFrame();           // 動的生成に使用されるプロテクト コンストラクタ。
 
-
 // アトリビュート
 public:
-
 
 // オペレーション
 public:
 	POINT  CMGRFrame::GetMousePoint(int click);
 
 	bool   calledMousePoint;		// GetMousePoint() の２重呼び出し禁止フラグ
-
 
 // オーバーライド
 	// ClassWizard は仮想関数のオーバーライドを生成します
@@ -73,6 +61,7 @@ protected:
 public:
 //	afx_msg BOOL OnEraseBkgnd(CDC* pDC);
 };
+
 
 /////////////////////////////////////////////////////////////////////////////
 

@@ -3,7 +3,6 @@
 
 #include "stdafx.h"
 
-
 #include "GraphLib.h"
 #include "ExClass.h"
 #include "WinTools.h"
@@ -11,7 +10,6 @@
 #include "MGRTempFrame.h"
 #include "ContrastDLG.h"
 #include "CTCallBack.h"
-
 
 #include "resource.h"
 
@@ -22,10 +20,8 @@
 static char THIS_FILE[] = __FILE__;
 #endif
 
-
 using namespace jbxl;
 using namespace jbxwl;
-
 
 
 
@@ -40,16 +36,9 @@ CMGRTempFrame::CMGRTempFrame()
 }
 
 
-
-
 CMGRTempFrame::~CMGRTempFrame()
 {
 }
-
-
-
-
-
 
 
 BEGIN_MESSAGE_MAP(CMGRTempFrame, CExFrame)
@@ -61,8 +50,6 @@ BEGIN_MESSAGE_MAP(CMGRTempFrame, CExFrame)
 
 	//}}AFX_MSG_MAP
 END_MESSAGE_MAP()
-
-
 
 
 /////////////////////////////////////////////////////////////////////////////
@@ -91,10 +78,6 @@ int CMGRTempFrame::OnCreate(LPCREATESTRUCT lpCreateStruct)
 }
 
 
-
-
-
-
 //
 // コントラスト設定
 //
@@ -106,10 +89,6 @@ void CMGRTempFrame::OnMgrContrast()
 		delete(cntDLG);
 	}
 }
-
-
-
-
 
 
 //
@@ -134,11 +113,6 @@ void CMGRTempFrame::OnMgrToVOL()
 		MessageBox(_T("CMGRTempFrame::OnMgrToVOL\n\n")+mesg, noti+_T("?"), MB_OK);
 	}
 }
-
-
-
-
-
 
 
 void CMGRTempFrame::OnMgrBack() 
@@ -172,15 +146,6 @@ void CMGRTempFrame::OnMgrBack()
 
 
 
-
-
-
-
-
-
-
-
-
 /////////////////////////////////////////////////////////////////////////////////////
 // メモ：メッセージ処理サンプル
 //
@@ -194,7 +159,6 @@ void CMGRTempFrame::OnMgrBack()
 /**/
 
   
-
 /*
 MSG msg;
 while (PeekMessage(&msg,0,0,0,PM_REMOVE)){
@@ -206,7 +170,6 @@ while (PeekMessage(&msg,0,0,0,PM_REMOVE)){
 /**/
 
 	
-
 /*
 if( ( (MSG *)lParam )->message == WM_MOUSEWHEEL )
 {
@@ -214,8 +177,6 @@ if( ( (MSG *)lParam )->message == WM_MOUSEWHEEL )
 	( (MSG *)lParam )->message = WM_NULL;	//ここで書き換えちゃう。
 }
 /**/
-
-
 
 
 /*	
@@ -231,7 +192,6 @@ if( ( (MSG *)lParam )->message == WM_MOUSEWHEEL )
 	}
 	
 /**/
-
 
 
 /*
@@ -503,11 +463,6 @@ if( ( (MSG *)lParam )->message == WM_MOUSEWHEEL )
 	#define WM_USER 0x0400  
 
 
-
-
-
-
-
 ウィンドウメッセージ 一覧表示 メッセージ名 意味 
 
 WM_ACTIVATE					ウインドウがアクティブ・非アクティブになるとき 
@@ -688,7 +643,6 @@ WM_VSCROLLCLIPBOARD			クリップボードビューワ内でスクロールイ�
 WM_WINDOWPOSCHANGED			etWindowPos()後に位置とサイズを変更したウインドウに送られる 
 WM_WINDOWPOSCHANGING		SetWindowPos()で位置とサイズを変更しているウインドウに送られる 
 WM_WININICHANGE				WIN.INIが変更された 
-
 
 /**/
 

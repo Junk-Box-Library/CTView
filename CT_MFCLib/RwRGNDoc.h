@@ -9,35 +9,23 @@
 // RwRGNDoc.h : ヘッダー ファイル
 //
 
-
-
 /**
 CRwRGNDoc クラス
 
 	抽出した領域データファイルを読み込んで rgnData に格納する．
 */
 
-
-
-
 #include  "ExClass.h"
 #include  "Branch.h"
 #include  "CTRGNio.h"
-
 
 using namespace jbxl;
 using namespace jbxwl;
 
 
-
-
-
 int  writeRgnFileWithCounter(LPCTSTR dname, RgnData** rgnData, int rgnDataNum);
 
 RgnData*  readRgnFileWithCounter(LPCTSTR fname);
-
-
-
 
 
 /////////////////////////////////////////////////////////////////////////////
@@ -49,19 +37,15 @@ protected:
 	CRwRGNDoc();           // 動的生成に使用されるプロテクト コンストラクタ。
 	DECLARE_DYNCREATE(CRwRGNDoc)
 
-
 // アトリビュート
 public:
 	RgnData*  rgnData;
-
 
 // オペレーション
 public:
 	virtual BOOL	ReadDataFile(LPCTSTR str);
 //	virtual BOOL	MakeViewData();
 //	virtual CmnHead TranslateData();
-
-
 
 // オーバーライド
 	// ClassWizard は仮想関数のオーバーライドを生成します。

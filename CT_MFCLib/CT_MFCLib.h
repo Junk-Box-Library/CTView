@@ -7,10 +7,6 @@
 #endif
 
 
-
-
-
-
 #include  "resource.h"       // メイン シンボル
 
 #include  "DxLRenderView.h"
