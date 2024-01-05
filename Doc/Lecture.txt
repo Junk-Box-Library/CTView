@@ -8,11 +8,6 @@
 http://jp.dll-download-system.com/docman/d-dlls-not-system-/d3dx9-43.dll/details.html
 
 
-*MagaDebug32(magdb142) 
-http://s-gikan2.maizuru-ct.ac.jp/old/magadbg.html
-http://www.vector.co.jp/soft/win95/prog/se065884.html
-
-
 *libjpeg http://www.ijg.org/
 copy jconfig.vc jconfig.h 
 nmake -f makefile.vc
