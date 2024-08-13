@@ -299,7 +299,7 @@
     </ResourceCompile>
     <Link>
       <AdditionalDependencies>winmm.lib;d3d9.lib;d3dx9.lib;dxerr.lib;dinput8.lib;dxguid.lib;CT_MFCLib.lib;CT.lib;JunkBox_Win_Lib.lib
-;JunkBox_Lib++.lib;%(AdditionalDependencies)</AdditionalDependencies>
+;JunkBox_Lib++.lib;libjpeg.lib;%(AdditionalDependencies)</AdditionalDependencies>
       <OutputFile>$(SolutionDir)$(Platform)\$(Configuration)\CTView.exe</OutputFile>
       <SuppressStartupBanner>true</SuppressStartupBanner>
       <AdditionalLibraryDirectories>..\..\JunkBox_Lib++\Release64;..\..\JunkBox_Win_Lib\Release64;..\CTLib\x64\Release;..\CT_MFCLib\x64\Release;<LibraryPath>$(LibraryPath);$(DXSDK_DIR)Lib\x64</LibraryPath>;..\..\jpeg-9e\Release\x64;C:\Program Files (x86)\Microsoft DirectX SDK (June 2010)\Lib\x64</AdditionalLibraryDirectories>
